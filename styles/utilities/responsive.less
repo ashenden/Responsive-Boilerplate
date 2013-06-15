@@ -1,0 +1,157 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* utilities/responsive.less                                                 */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+.hide,
+.hidden {
+	
+	display: none;
+	visibility: hidden;
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Visibility Utilities                                                      */
+/*                                                                           */
+/* ========================================================================= */
+
+
+.visible-mobile				{	display: none !important; 		}
+.visible-mobile-vertical	{	display: none !important; 		}
+.visible-mobile-landscape	{	display: none !important;		}
+.visible-tablet				{	display: none !important;		}
+.visible-desktop			{	display: inherit !important;	}
+.visible-widescreen			{	display: none !important;		}
+
+.hidden-mobile				{									}
+.hidden-mobile-vertical		{									}
+.hidden-mobile-landscape	{									}
+.hidden-tablet				{									}
+.hidden-desktop				{	display: none !important; 		}
+.hidden-widescreen			{									}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+	.visible-mobile				{	display: none !important; 		}
+	.visible-mobile-vertical	{	display: none !important; 		}
+	.visible-mobile-landscape	{	display: none !important;		}
+	.visible-tablet				{	display: none !important;		}
+	.visible-desktop			{	display: none !important;		}
+	.visible-widescreen			{	display: inherit !important;	}
+	
+	.hidden-mobile				{									}
+	.hidden-mobile-vertical		{									}
+	.hidden-mobile-landscape	{									}
+	.hidden-tablet				{									}
+	.hidden-desktop				{									}
+	.hidden-widescreen			{	display: none !important;		}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+	.visible-mobile				{	display: none !important; 		}
+	.visible-mobile-vertical	{	display: none !important; 		}
+	.visible-mobile-landscape	{	display: none !important;		}
+	.visible-tablet				{	display: inherit !important;	}
+	.visible-desktop			{	display: none !important;		}
+	.visible-widescreen			{	display: none !important;		}
+	
+	.hidden-mobile				{									}
+	.hidden-mobile-vertical		{									}
+	.hidden-mobile-landscape	{									}
+	.hidden-tablet				{	display: none !important;		}
+	.hidden-desktop				{									}
+	.hidden-widescreen			{									}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+	
+	.visible-mobile				{	display: inherit !important; 	}
+	.visible-mobile-vertical	{	display: none !important; 		}
+	.visible-mobile-landscape	{	display: inherit !important;	}
+	.visible-tablet				{	display: none !important;		}
+	.visible-desktop			{	display: none !important;		}
+	.visible-widescreen			{	display: none !important;		}
+	
+	.hidden-mobile				{	display: none !important;		}
+	.hidden-mobile-vertical		{									}
+	.hidden-mobile-landscape	{	display: none !important;		}
+	.hidden-tablet				{									}
+	.hidden-desktop				{									}
+	.hidden-widescreen			{									}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape mobiles (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+	
+	.visible-mobile				{	display: inherit !important; 	}
+	.visible-mobile-vertical		{	display: inherit !important; 	}
+	.visible-mobile-landscape	{	display: none !important;		}
+	.visible-tablet				{	display: none !important;		}
+	.visible-desktop			{	display: none !important;		}
+	.visible-widescreen			{	display: none !important;		}
+	
+	.hidden-mobile				{	display: none !important;		}
+	.hidden-mobile-vertical		{	display: none !important;		}
+	.hidden-mobile-landscape		{									}
+	.hidden-tablet				{									}
+	.hidden-desktop				{									}
+	.hidden-widescreen			{									}
+	
+}
+
+
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

@@ -1,0 +1,523 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* scaffolding/layout.less                                                   */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Fixed Grid                                                                */
+/*                                                                           */
+/* ========================================================================= */
+
+#grid > .core(@gridColumnWidth, @gridGutterWidth);
+
+.container {
+	
+	position: relative;
+	.container-fixed();
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Fluid Grid                                                                */
+/*                                                                           */
+/* ========================================================================= */
+
+#grid > .fluid(@fluidGridColumnWidth, @fluidGridGutterWidth);
+
+.container-fluid {
+	
+	padding-right: @gridGutterWidth;
+	padding-left: @gridGutterWidth;
+	position: relative;
+	.clearfix();
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Container Pod                                                             */
+/*                                                                           */
+/* ========================================================================= */
+	
+.container-pod {
+	
+	padding-top: @primaryMargin;
+	padding-bottom: @primaryMargin;
+	
+	&.container-pod-short {
+		
+		padding-top: @primaryMarginShort;
+		padding-bottom: @primaryMarginShort;
+		
+	}
+	
+	&.container-pod-tall {
+		
+		padding-top: @primaryMarginTall;
+		padding-bottom: @primaryMarginTall;
+		
+	}
+	
+	&.container-pod-divider {
+	
+		border-top: 1px solid @borderColor;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Row                                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+.row-pod {
+	
+	padding-bottom: @primaryMargin;
+	
+	&.short {
+		
+		padding-bottom: @primaryMarginShort;
+		
+	}
+	
+	&.tall {
+		
+		padding-bottom: @primaryMarginTall;
+		
+	}
+	
+}
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Container Fill                                                            */
+/*                                                                           */
+/* ========================================================================= */
+	
+.container-fill {
+	
+	height: 100%;
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Fixed Grid                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#grid > .core(@gridColumnWidthWidescreen, @gridGutterWidthWidescreen);
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Fluid Grid                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#grid > .fluid(@fluidGridColumnWidthWidescreen, @fluidGridGutterWidthWidescreen);
+	
+	.container-fluid {
+		
+		padding-right: @gridGutterWidthWidescreen;
+		padding-left: @gridGutterWidthWidescreen;
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Container Pod                                                             */
+	/*                                                                           */
+	/* ========================================================================= */
+		
+	.container-pod {
+		
+		padding-top: @primaryMarginWidescreen;
+		padding-bottom: @primaryMarginWidescreen;
+		
+		&.container-pod-short {
+			
+			padding-top: @primaryMarginShortWidescreen;
+			padding-bottom: @primaryMarginShortWidescreen;
+			
+		}
+		
+		&.container-pod-tall {
+			
+			padding-top: @primaryMarginTallWidescreen;
+			padding-bottom: @primaryMarginTallWidescreen;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Row                                                                       */
+	/*                                                                           */
+	/* ========================================================================= */
+		
+	.row-pod {
+		
+		padding-bottom: @primaryMarginWidescreen;
+		
+		&.short {
+			
+			padding-bottom: @primaryMarginShortWidescreen;
+			
+		}
+		
+		&.tall {
+			
+			padding-bottom: @primaryMarginTallWidescreen;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Fixed Grid                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#grid > .core(@gridColumnWidthTablet, @gridGutterWidthTablet);
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Fluid Grid                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	#grid > .fluid(@fluidGridColumnWidthTablet, @fluidGridGutterWidthTablet);
+	
+	.container-fluid {
+		
+		padding-right: @gridGutterWidthTablet;
+		padding-left: @gridGutterWidthTablet;
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Container Pod                                                             */
+	/*                                                                           */
+	/* ========================================================================= */
+		
+	.container-pod {
+		
+		padding-top: @primaryMarginTablet;
+		padding-bottom: @primaryMarginTablet;
+		
+		&.container-pod-short {
+			
+			padding-top: @primaryMarginShortTablet;
+			padding-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+		&.container-pod-tall {
+			
+			padding-top: @primaryMarginTallTablet;
+			padding-bottom: @primaryMarginTallTablet;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Row                                                                       */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.row-pod {
+		
+		padding-bottom: @primaryMarginTablet;
+		
+		&.short {
+			
+			padding-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+		&.tall {
+			
+			padding-bottom: @primaryMarginTallTablet;
+			
+		}
+		
+	}
+	
+}
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Fixed Grid                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.container {
+		
+		width: auto;
+		padding-left: @gridGutterWidthMobile;
+		padding-right: @gridGutterWidthMobile;
+		
+	}
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Fluid Grid                                                                */
+	/*                                                                           */
+	/* ========================================================================= */
+	
+	.container-fluid {
+		
+		padding-left: 0px;
+		padding-right: 0px;
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Container Pod                                                             */
+	/*                                                                           */
+	/* ========================================================================= */
+		
+	.container-pod {
+		
+		padding-top: @primaryMarginTablet;
+		padding-bottom: @primaryMarginTablet;
+		
+		&.container-pod-short {
+			
+			padding-top: @primaryMarginShortTablet;
+			padding-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+		&.container-pod-tall {
+			
+			padding-top: @primaryMarginTallTablet;
+			padding-bottom: @primaryMarginTallTablet;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Row                                                                       */
+	/*                                                                           */
+	/* ========================================================================= */
+		
+	.spill {
+		
+		margin-top: @primaryMarginTablet;
+		
+	}
+
+	.row-pod {
+		
+		padding-bottom: @primaryMarginTablet;
+		
+		&.short {
+			
+			padding-bottom: @primaryMarginShortTablet;
+			
+		}
+		
+		&.tall {
+			
+			padding-bottom: @primaryMarginTallTablet;
+			
+		}
+		
+	}
+	
+	// Undo negative margin on rows and thumbnails
+	
+	.row {
+		
+		margin-left: 0;
+		
+	}
+	
+	// Make all grid-sized elements block level again
+	
+	[class*="span"],
+	.row-fluid [class*="span"] {
+		
+		float: none;
+		display: block;
+		width: auto;
+		margin-left: 0;
+		
+	}
+	
+	// Fluid rows
+	
+	.row-fluid {
+		
+		width: 100%;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Container Pod                                                             */
+	/*                                                                           */
+	/* ========================================================================= */
+		
+	.container-pod {
+		
+		padding-top: @primaryMarginMobile;
+		padding-bottom: @primaryMarginMobile;
+		
+		&.container-pod-short {
+			
+			padding-top: @primaryMarginShortMobile;
+			padding-bottom: @primaryMarginShortMobile;
+			
+		}
+		
+		&.container-pod-tall {
+			
+			padding-top: @primaryMarginTallMobile;
+			padding-bottom: @primaryMarginTallMobile;
+			
+		}
+		
+	}
+	
+	
+	
+	/* ========================================================================= */
+	/*                                                                           */
+	/* Row                                                                       */
+	/*                                                                           */
+	/* ========================================================================= */
+		
+	.spill {
+		
+		margin-top: @primaryMarginMobile;
+		
+		&.short {
+			
+			margin-top: @primaryMarginShortMobile;
+			
+		}
+		
+		&.tall {
+			
+			margin-top: @primaryMarginTallMobile;
+			
+		}
+		
+	}
+
+	.row-pod {
+		
+		padding-bottom: @primaryMarginMobile;
+		
+		&.short {
+			
+			padding-bottom: @primaryMarginShortMobile;
+			
+		}
+		
+		&.tall {
+			
+			padding-bottom: @primaryMarginTallMobile;
+			
+		}
+		
+	}
+
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

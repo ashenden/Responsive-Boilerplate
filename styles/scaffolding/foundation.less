@@ -1,0 +1,130 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* scaffolding/foundation.less                                               */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Body Reset                                                                */
+/*                                                                           */
+/* ========================================================================= */
+
+body {
+	
+	margin: 0;
+	font-family: @bodyTextFontFamily;
+	font-size: @bodyTextFontSize;
+	line-height: @bodyTextLineHeight;
+	color: @bodyTextColor;
+	background-color: @bodyBackground;
+	height: 100%;
+	overflow-x: hidden;
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Links                                                                     */
+/*                                                                           */
+/* ========================================================================= */
+
+a {
+	
+	color: @linkColor;
+	text-decoration: none;
+	
+}
+
+a:hover {
+	
+	color: @linkColorHover;
+	text-decoration: none;
+	
+}
+
+a:active {
+	
+	color: @linkColorActive;
+	text-decoration: none;
+	
+}
+
+::selection {
+	
+    background: @linkColor;
+    color: @white;
+    
+}
+
+::-moz-selection {
+	
+    background: @linkColor;
+    color: @white;
+    
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}

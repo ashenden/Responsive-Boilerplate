@@ -1,0 +1,4733 @@
+/* ========================================================================= */
+/*                                                                           */
+/* Configuration                                                             */
+/*                                                                           */
+/* ========================================================================= */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover,
+a:focus,
+a:active {
+  outline: 0 !important;
+}
+:focus {
+  outline: 0;
+  outline: none;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  height: auto;
+}
+#map_canvas img {
+  max-width: none;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* config/variables.less                                                     */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ========================================================================= */
+/*                                                                           */
+/* Colors                                                                    */
+/*                                                                           */
+/* ========================================================================= */
+/* ========================================================================= */
+/*                                                                           */
+/* Scaffolding                                                               */
+/*                                                                           */
+/* ========================================================================= */
+/* ========================================================================= */
+/*                                                                           */
+/* Typography                                                                */
+/*                                                                           */
+/* ========================================================================= */
+/* ========================================================================= */
+/*                                                                           */
+/* Utilities                                                                 */
+/*                                                                           */
+/* ========================================================================= */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* utilities/mixins.less                                                     */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ========================================================================= */
+/*                                                                           */
+/* Utilities                                                                 */
+/*                                                                           */
+/* ========================================================================= */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Fonts                                                                     */
+/*                                                                           */
+/* ========================================================================= */
+/* ========================================================================= */
+/*                                                                           */
+/* Forms                                                                     */
+/*                                                                           */
+/* ========================================================================= */
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* CSS3 Properties                                                           */
+/*                                                                           */
+/* ========================================================================= */
+/* ========================================================================= */
+/*                                                                           */
+/* Backgrouns                                                                */
+/*                                                                           */
+/* ========================================================================= */
+/* ========================================================================= */
+/*                                                                           */
+/* Components Mixins                                                         */
+/*                                                                           */
+/* ========================================================================= */
+/* ========================================================================= */
+/*                                                                           */
+/* Grid System                                                               */
+/*                                                                           */
+/* ========================================================================= */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* utilities/utilities.less                                                  */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.centered {
+  text-align: center;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.flush {
+  margin-bottom: 0px !important;
+}
+.hasCursor {
+  cursor: pointer;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* utilities/responsive.less                                                 */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.hide,
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Visibility Utilities                                                      */
+/*                                                                           */
+/* ========================================================================= */
+.visible-mobile {
+  display: none !important;
+}
+.visible-mobile-vertical {
+  display: none !important;
+}
+.visible-mobile-landscape {
+  display: none !important;
+}
+.visible-tablet {
+  display: none !important;
+}
+.visible-desktop {
+  display: inherit !important;
+}
+.visible-widescreen {
+  display: none !important;
+}
+.hidden-desktop {
+  display: none !important;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+@media (min-width: 1240px) {
+  .visible-mobile {
+    display: none !important;
+  }
+  .visible-mobile-vertical {
+    display: none !important;
+  }
+  .visible-mobile-landscape {
+    display: none !important;
+  }
+  .visible-tablet {
+    display: none !important;
+  }
+  .visible-desktop {
+    display: none !important;
+  }
+  .visible-widescreen {
+    display: inherit !important;
+  }
+  .hidden-widescreen {
+    display: none !important;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+@media (min-width: 768px) and (max-width: 989px) {
+  .visible-mobile {
+    display: none !important;
+  }
+  .visible-mobile-vertical {
+    display: none !important;
+  }
+  .visible-mobile-landscape {
+    display: none !important;
+  }
+  .visible-tablet {
+    display: inherit !important;
+  }
+  .visible-desktop {
+    display: none !important;
+  }
+  .visible-widescreen {
+    display: none !important;
+  }
+  .hidden-tablet {
+    display: none !important;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+@media (max-width: 767px) {
+  .visible-mobile {
+    display: inherit !important;
+  }
+  .visible-mobile-vertical {
+    display: none !important;
+  }
+  .visible-mobile-landscape {
+    display: inherit !important;
+  }
+  .visible-tablet {
+    display: none !important;
+  }
+  .visible-desktop {
+    display: none !important;
+  }
+  .visible-widescreen {
+    display: none !important;
+  }
+  .hidden-mobile {
+    display: none !important;
+  }
+  .hidden-mobile-landscape {
+    display: none !important;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape mobiles (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+@media (max-width: 479px) {
+  .visible-mobile {
+    display: inherit !important;
+  }
+  .visible-mobile-vertical {
+    display: inherit !important;
+  }
+  .visible-mobile-landscape {
+    display: none !important;
+  }
+  .visible-tablet {
+    display: none !important;
+  }
+  .visible-desktop {
+    display: none !important;
+  }
+  .visible-widescreen {
+    display: none !important;
+  }
+  .hidden-mobile {
+    display: none !important;
+  }
+  .hidden-mobile-vertical {
+    display: none !important;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Scaffolding                                                               */
+/*                                                                           */
+/* ========================================================================= */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* scaffolding/foundation.less                                               */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ========================================================================= */
+/*                                                                           */
+/* Body Reset                                                                */
+/*                                                                           */
+/* ========================================================================= */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  background-color: #f5f5f5;
+  height: 100%;
+  overflow-x: hidden;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Links                                                                     */
+/*                                                                           */
+/* ========================================================================= */
+a {
+  color: #3f8eb0;
+  text-decoration: none;
+}
+a:hover {
+  color: #2b6178;
+  text-decoration: none;
+}
+a:active {
+  color: #1d4252;
+  text-decoration: none;
+}
+::selection {
+  background: #3f8eb0;
+  color: #ffffff;
+}
+::-moz-selection {
+  background: #3f8eb0;
+  color: #ffffff;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+@media (min-width: 1240px) {
+  
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+@media (min-width: 768px) and (max-width: 989px) {
+  
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+@media (max-width: 767px) {
+  
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+@media (max-width: 479px) {
+  
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* scaffolding/layout.less                                                   */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ========================================================================= */
+/*                                                                           */
+/* Fixed Grid                                                                */
+/*                                                                           */
+/* ========================================================================= */
+.row {
+  margin-left: -30px;
+  *zoom: 1;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.row:after {
+  clear: both;
+}
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 30px;
+}
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 930px;
+}
+.span12 {
+  width: 930px;
+}
+.span11 {
+  width: 850px;
+}
+.span10 {
+  width: 770px;
+}
+.span9 {
+  width: 690px;
+}
+.span8 {
+  width: 610px;
+}
+.span7 {
+  width: 530px;
+}
+.span6 {
+  width: 450px;
+}
+.span5 {
+  width: 370px;
+}
+.span4 {
+  width: 290px;
+}
+.span3 {
+  width: 210px;
+}
+.span2 {
+  width: 130px;
+}
+.span1 {
+  width: 50px;
+}
+.offset12 {
+  margin-left: 990px;
+}
+.offset11 {
+  margin-left: 910px;
+}
+.offset10 {
+  margin-left: 830px;
+}
+.offset9 {
+  margin-left: 750px;
+}
+.offset8 {
+  margin-left: 670px;
+}
+.offset7 {
+  margin-left: 590px;
+}
+.offset6 {
+  margin-left: 510px;
+}
+.offset5 {
+  margin-left: 430px;
+}
+.offset4 {
+  margin-left: 350px;
+}
+.offset3 {
+  margin-left: 270px;
+}
+.offset2 {
+  margin-left: 190px;
+}
+.offset1 {
+  margin-left: 110px;
+}
+.container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+.container:before,
+.container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.container:after {
+  clear: both;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Fluid Grid                                                                */
+/*                                                                           */
+/* ========================================================================= */
+.row-fluid {
+  width: 100%;
+  *zoom: 1;
+}
+.row-fluid:before,
+.row-fluid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.row-fluid:after {
+  clear: both;
+}
+.row-fluid [class*="span"] {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 1px;
+  float: left;
+  margin-left: 2.1276595749090914%;
+  *margin-left: 2.0738961340488764%;
+}
+.row-fluid [class*="span"]:first-child {
+  margin-left: 0;
+}
+.row-fluid .controls-row [class*="span"] + [class*="span"] {
+  margin-left: 2.1276595749090914%;
+}
+.row-fluid .span12 {
+  width: 100%;
+  *width: 99.94623655913979%;
+}
+.row-fluid .span11 {
+  width: 91.48936170209092%;
+  *width: 91.43559826123071%;
+}
+.row-fluid .span10 {
+  width: 82.97872340418182%;
+  *width: 82.92495996332161%;
+}
+.row-fluid .span9 {
+  width: 74.46808510627272%;
+  *width: 74.41432166541252%;
+}
+.row-fluid .span8 {
+  width: 65.95744680836364%;
+  *width: 65.90368336750343%;
+}
+.row-fluid .span7 {
+  width: 57.446808510454545%;
+  *width: 57.39304506959433%;
+}
+.row-fluid .span6 {
+  width: 48.936170212545456%;
+  *width: 48.88240677168524%;
+}
+.row-fluid .span5 {
+  width: 40.425531914636366%;
+  *width: 40.37176847377615%;
+}
+.row-fluid .span4 {
+  width: 31.914893616727273%;
+  *width: 31.861130175867057%;
+}
+.row-fluid .span3 {
+  width: 23.40425531881818%;
+  *width: 23.350491877957964%;
+}
+.row-fluid .span2 {
+  width: 14.89361702090909%;
+  *width: 14.839853580048874%;
+}
+.row-fluid .span1 {
+  width: 6.382978723%;
+  *width: 6.329215282139785%;
+}
+.row-fluid .offset12 {
+  margin-left: 104.25531914981818%;
+  *margin-left: 104.14779226809776%;
+}
+.row-fluid .offset12:first-child {
+  margin-left: 102.12765957490909%;
+  *margin-left: 102.02013269318867%;
+}
+.row-fluid .offset11 {
+  margin-left: 95.7446808519091%;
+  *margin-left: 95.63715397018868%;
+}
+.row-fluid .offset11:first-child {
+  margin-left: 93.617021277%;
+  *margin-left: 93.50949439527959%;
+}
+.row-fluid .offset10 {
+  margin-left: 87.234042554%;
+  *margin-left: 87.12651567227958%;
+}
+.row-fluid .offset10:first-child {
+  margin-left: 85.10638297909091%;
+  *margin-left: 84.99885609737049%;
+}
+.row-fluid .offset9 {
+  margin-left: 78.7234042560909%;
+  *margin-left: 78.61587737437048%;
+}
+.row-fluid .offset9:first-child {
+  margin-left: 76.59574468118181%;
+  *margin-left: 76.4882177994614%;
+}
+.row-fluid .offset8 {
+  margin-left: 70.21276595818182%;
+  *margin-left: 70.1052390764614%;
+}
+.row-fluid .offset8:first-child {
+  margin-left: 68.08510638327273%;
+  *margin-left: 67.97757950155231%;
+}
+.row-fluid .offset7 {
+  margin-left: 61.70212766027273%;
+  *margin-left: 61.5946007785523%;
+}
+.row-fluid .offset7:first-child {
+  margin-left: 59.574468085363634%;
+  *margin-left: 59.4669412036432%;
+}
+.row-fluid .offset6 {
+  margin-left: 53.19148936236364%;
+  *margin-left: 53.08396248064321%;
+}
+.row-fluid .offset6:first-child {
+  margin-left: 51.063829787454544%;
+  *margin-left: 50.95630290573411%;
+}
+.row-fluid .offset5 {
+  margin-left: 44.68085106445455%;
+  *margin-left: 44.57332418273412%;
+}
+.row-fluid .offset5:first-child {
+  margin-left: 42.553191489545455%;
+  *margin-left: 42.44566460782502%;
+}
+.row-fluid .offset4 {
+  margin-left: 36.170212766545454%;
+  *margin-left: 36.06268588482502%;
+}
+.row-fluid .offset4:first-child {
+  margin-left: 34.042553191636365%;
+  *margin-left: 33.93502630991593%;
+}
+.row-fluid .offset3 {
+  margin-left: 27.659574468636364%;
+  *margin-left: 27.552047586915933%;
+}
+.row-fluid .offset3:first-child {
+  margin-left: 25.531914893727272%;
+  *margin-left: 25.42438801200684%;
+}
+.row-fluid .offset2 {
+  margin-left: 19.148936170727275%;
+  *margin-left: 19.041409289006843%;
+}
+.row-fluid .offset2:first-child {
+  margin-left: 17.021276595818183%;
+  *margin-left: 16.91374971409775%;
+}
+.row-fluid .offset1 {
+  margin-left: 10.638297872818182%;
+  *margin-left: 10.530770991097752%;
+}
+.row-fluid .offset1:first-child {
+  margin-left: 8.510638297909091%;
+  *margin-left: 8.403111416188661%;
+}
+.container-fluid {
+  padding-right: 30px;
+  padding-left: 30px;
+  position: relative;
+  *zoom: 1;
+}
+.container-fluid:before,
+.container-fluid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.container-fluid:after {
+  clear: both;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Container Pod                                                             */
+/*                                                                           */
+/* ========================================================================= */
+.container-pod {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container-pod.container-pod-short {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.container-pod.container-pod-tall {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.container-pod.container-pod-divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Row                                                                       */
+/*                                                                           */
+/* ========================================================================= */
+.row-pod {
+  padding-bottom: 60px;
+}
+.row-pod.short {
+  padding-bottom: 30px;
+}
+.row-pod.tall {
+  padding-bottom: 80px;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Container Fill                                                            */
+/*                                                                           */
+/* ========================================================================= */
+.container-fill {
+  height: 100%;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+@media (min-width: 1240px) {
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Fixed Grid                                                                */
+  /*                                                                           */
+  /* ========================================================================= */
+  .row {
+    margin-left: -35px;
+    *zoom: 1;
+  }
+  .row:before,
+  .row:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .row:after {
+    clear: both;
+  }
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 35px;
+  }
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 1165px;
+  }
+  .span12 {
+    width: 1165px;
+  }
+  .span11 {
+    width: 1065px;
+  }
+  .span10 {
+    width: 965px;
+  }
+  .span9 {
+    width: 865px;
+  }
+  .span8 {
+    width: 765px;
+  }
+  .span7 {
+    width: 665px;
+  }
+  .span6 {
+    width: 565px;
+  }
+  .span5 {
+    width: 465px;
+  }
+  .span4 {
+    width: 365px;
+  }
+  .span3 {
+    width: 265px;
+  }
+  .span2 {
+    width: 165px;
+  }
+  .span1 {
+    width: 65px;
+  }
+  .offset12 {
+    margin-left: 1235px;
+  }
+  .offset11 {
+    margin-left: 1135px;
+  }
+  .offset10 {
+    margin-left: 1035px;
+  }
+  .offset9 {
+    margin-left: 935px;
+  }
+  .offset8 {
+    margin-left: 835px;
+  }
+  .offset7 {
+    margin-left: 735px;
+  }
+  .offset6 {
+    margin-left: 635px;
+  }
+  .offset5 {
+    margin-left: 535px;
+  }
+  .offset4 {
+    margin-left: 435px;
+  }
+  .offset3 {
+    margin-left: 335px;
+  }
+  .offset2 {
+    margin-left: 235px;
+  }
+  .offset1 {
+    margin-left: 135px;
+  }
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Fluid Grid                                                                */
+  /*                                                                           */
+  /* ========================================================================= */
+  .row-fluid {
+    width: 100%;
+    *zoom: 1;
+  }
+  .row-fluid:before,
+  .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .row-fluid:after {
+    clear: both;
+  }
+  .row-fluid [class*="span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 1px;
+    float: left;
+    margin-left: 2.5641025640000006%;
+    *margin-left: 2.5103391231397856%;
+  }
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 2.5641025640000006%;
+  }
+  .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94623655913979%;
+  }
+  .row-fluid .span11 {
+    width: 91.45299145300001%;
+    *width: 91.3992280121398%;
+  }
+  .row-fluid .span10 {
+    width: 82.90598290600002%;
+    *width: 82.85221946513981%;
+  }
+  .row-fluid .span9 {
+    width: 74.358974359%;
+    *width: 74.30521091813979%;
+  }
+  .row-fluid .span8 {
+    width: 65.81196581200001%;
+    *width: 65.7582023711398%;
+  }
+  .row-fluid .span7 {
+    width: 57.26495726500001%;
+    *width: 57.21119382413979%;
+  }
+  .row-fluid .span6 {
+    width: 48.717948718%;
+    *width: 48.66418527713979%;
+  }
+  .row-fluid .span5 {
+    width: 40.170940171000005%;
+    *width: 40.11717673013979%;
+  }
+  .row-fluid .span4 {
+    width: 31.623931624%;
+    *width: 31.570168183139785%;
+  }
+  .row-fluid .span3 {
+    width: 23.076923077%;
+    *width: 23.023159636139784%;
+  }
+  .row-fluid .span2 {
+    width: 14.529914530000001%;
+    *width: 14.476151089139785%;
+  }
+  .row-fluid .span1 {
+    width: 5.982905983%;
+    *width: 5.929142542139785%;
+  }
+  .row-fluid .offset12 {
+    margin-left: 105.128205128%;
+    *margin-left: 105.02067824627959%;
+  }
+  .row-fluid .offset12:first-child {
+    margin-left: 102.564102564%;
+    *margin-left: 102.45657568227958%;
+  }
+  .row-fluid .offset11 {
+    margin-left: 96.58119658100001%;
+    *margin-left: 96.4736696992796%;
+  }
+  .row-fluid .offset11:first-child {
+    margin-left: 94.017094017%;
+    *margin-left: 93.90956713527959%;
+  }
+  .row-fluid .offset10 {
+    margin-left: 88.03418803400002%;
+    *margin-left: 87.9266611522796%;
+  }
+  .row-fluid .offset10:first-child {
+    margin-left: 85.47008547000001%;
+    *margin-left: 85.3625585882796%;
+  }
+  .row-fluid .offset9 {
+    margin-left: 79.487179487%;
+    *margin-left: 79.37965260527959%;
+  }
+  .row-fluid .offset9:first-child {
+    margin-left: 76.923076923%;
+    *margin-left: 76.81555004127958%;
+  }
+  .row-fluid .offset8 {
+    margin-left: 70.94017094000002%;
+    *margin-left: 70.8326440582796%;
+  }
+  .row-fluid .offset8:first-child {
+    margin-left: 68.376068376%;
+    *margin-left: 68.26854149427959%;
+  }
+  .row-fluid .offset7 {
+    margin-left: 62.39316239300001%;
+    *margin-left: 62.28563551127957%;
+  }
+  .row-fluid .offset7:first-child {
+    margin-left: 59.82905982900001%;
+    *margin-left: 59.72153294727958%;
+  }
+  .row-fluid .offset6 {
+    margin-left: 53.84615384600001%;
+    *margin-left: 53.73862696427957%;
+  }
+  .row-fluid .offset6:first-child {
+    margin-left: 51.282051282000005%;
+    *margin-left: 51.17452440027957%;
+  }
+  .row-fluid .offset5 {
+    margin-left: 45.299145299%;
+    *margin-left: 45.19161841727958%;
+  }
+  .row-fluid .offset5:first-child {
+    margin-left: 42.73504273500001%;
+    *margin-left: 42.627515853279576%;
+  }
+  .row-fluid .offset4 {
+    margin-left: 36.752136752%;
+    *margin-left: 36.644609870279574%;
+  }
+  .row-fluid .offset4:first-child {
+    margin-left: 34.188034188%;
+    *margin-left: 34.08050730627957%;
+  }
+  .row-fluid .offset3 {
+    margin-left: 28.205128205%;
+    *margin-left: 28.09760132327957%;
+  }
+  .row-fluid .offset3:first-child {
+    margin-left: 25.641025641%;
+    *margin-left: 25.533498759279567%;
+  }
+  .row-fluid .offset2 {
+    margin-left: 19.658119658000004%;
+    *margin-left: 19.550592776279572%;
+  }
+  .row-fluid .offset2:first-child {
+    margin-left: 17.094017094%;
+    *margin-left: 16.98649021227957%;
+  }
+  .row-fluid .offset1 {
+    margin-left: 11.111111111000001%;
+    *margin-left: 11.003584229279571%;
+  }
+  .row-fluid .offset1:first-child {
+    margin-left: 8.547008547%;
+    *margin-left: 8.439481665279569%;
+  }
+  .container-fluid {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Container Pod                                                             */
+  /*                                                                           */
+  /* ========================================================================= */
+  .container-pod {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .container-pod.container-pod-short {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .container-pod.container-pod-tall {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Row                                                                       */
+  /*                                                                           */
+  /* ========================================================================= */
+  .row-pod {
+    padding-bottom: 70px;
+  }
+  .row-pod.short {
+    padding-bottom: 35px;
+  }
+  .row-pod.tall {
+    padding-bottom: 100px;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+@media (min-width: 768px) and (max-width: 989px) {
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Fixed Grid                                                                */
+  /*                                                                           */
+  /* ========================================================================= */
+  .row {
+    margin-left: -22px;
+    *zoom: 1;
+  }
+  .row:before,
+  .row:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .row:after {
+    clear: both;
+  }
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 22px;
+  }
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 722px;
+  }
+  .span12 {
+    width: 722px;
+  }
+  .span11 {
+    width: 660px;
+  }
+  .span10 {
+    width: 598px;
+  }
+  .span9 {
+    width: 536px;
+  }
+  .span8 {
+    width: 474px;
+  }
+  .span7 {
+    width: 412px;
+  }
+  .span6 {
+    width: 350px;
+  }
+  .span5 {
+    width: 288px;
+  }
+  .span4 {
+    width: 226px;
+  }
+  .span3 {
+    width: 164px;
+  }
+  .span2 {
+    width: 102px;
+  }
+  .span1 {
+    width: 40px;
+  }
+  .offset12 {
+    margin-left: 766px;
+  }
+  .offset11 {
+    margin-left: 704px;
+  }
+  .offset10 {
+    margin-left: 642px;
+  }
+  .offset9 {
+    margin-left: 580px;
+  }
+  .offset8 {
+    margin-left: 518px;
+  }
+  .offset7 {
+    margin-left: 456px;
+  }
+  .offset6 {
+    margin-left: 394px;
+  }
+  .offset5 {
+    margin-left: 332px;
+  }
+  .offset4 {
+    margin-left: 270px;
+  }
+  .offset3 {
+    margin-left: 208px;
+  }
+  .offset2 {
+    margin-left: 146px;
+  }
+  .offset1 {
+    margin-left: 84px;
+  }
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Fluid Grid                                                                */
+  /*                                                                           */
+  /* ========================================================================= */
+  .row-fluid {
+    width: 100%;
+    *zoom: 1;
+  }
+  .row-fluid:before,
+  .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .row-fluid:after {
+    clear: both;
+  }
+  .row-fluid [class*="span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 1px;
+    float: left;
+    margin-left: 2.762430939636364%;
+    *margin-left: 2.708667498776149%;
+  }
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 2.762430939636364%;
+  }
+  .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94623655913979%;
+  }
+  .row-fluid .span11 {
+    width: 91.43646408836364%;
+    *width: 91.38270064750343%;
+  }
+  .row-fluid .span10 {
+    width: 82.87292817672727%;
+    *width: 82.81916473586706%;
+  }
+  .row-fluid .span9 {
+    width: 74.3093922650909%;
+    *width: 74.2556288242307%;
+  }
+  .row-fluid .span8 {
+    width: 65.74585635345454%;
+    *width: 65.69209291259433%;
+  }
+  .row-fluid .span7 {
+    width: 57.18232044181819%;
+    *width: 57.128557000957976%;
+  }
+  .row-fluid .span6 {
+    width: 48.61878453018182%;
+    *width: 48.565021089321604%;
+  }
+  .row-fluid .span5 {
+    width: 40.055248618545455%;
+    *width: 40.00148517768524%;
+  }
+  .row-fluid .span4 {
+    width: 31.49171270690909%;
+    *width: 31.437949266048875%;
+  }
+  .row-fluid .span3 {
+    width: 22.928176795272726%;
+    *width: 22.87441335441251%;
+  }
+  .row-fluid .span2 {
+    width: 14.364640883636364%;
+    *width: 14.310877442776148%;
+  }
+  .row-fluid .span1 {
+    width: 5.801104972%;
+    *width: 5.747341531139785%;
+  }
+  .row-fluid .offset12 {
+    margin-left: 105.52486187927273%;
+    *margin-left: 105.41733499755232%;
+  }
+  .row-fluid .offset12:first-child {
+    margin-left: 102.76243093963636%;
+    *margin-left: 102.65490405791594%;
+  }
+  .row-fluid .offset11 {
+    margin-left: 96.96132596763637%;
+    *margin-left: 96.85379908591595%;
+  }
+  .row-fluid .offset11:first-child {
+    margin-left: 94.198895028%;
+    *margin-left: 94.09136814627958%;
+  }
+  .row-fluid .offset10 {
+    margin-left: 88.397790056%;
+    *margin-left: 88.29026317427959%;
+  }
+  .row-fluid .offset10:first-child {
+    margin-left: 85.63535911636363%;
+    *margin-left: 85.52783223464321%;
+  }
+  .row-fluid .offset9 {
+    margin-left: 79.83425414436364%;
+    *margin-left: 79.72672726264322%;
+  }
+  .row-fluid .offset9:first-child {
+    margin-left: 77.07182320472727%;
+    *margin-left: 76.96429632300685%;
+  }
+  .row-fluid .offset8 {
+    margin-left: 71.27071823272728%;
+    *margin-left: 71.16319135100686%;
+  }
+  .row-fluid .offset8:first-child {
+    margin-left: 68.5082872930909%;
+    *margin-left: 68.40076041137048%;
+  }
+  .row-fluid .offset7 {
+    margin-left: 62.70718232109092%;
+    *margin-left: 62.59965543937049%;
+  }
+  .row-fluid .offset7:first-child {
+    margin-left: 59.94475138145456%;
+    *margin-left: 59.83722449973413%;
+  }
+  .row-fluid .offset6 {
+    margin-left: 54.14364640945455%;
+    *margin-left: 54.036119527734115%;
+  }
+  .row-fluid .offset6:first-child {
+    margin-left: 51.38121546981819%;
+    *margin-left: 51.273688588097755%;
+  }
+  .row-fluid .offset5 {
+    margin-left: 45.58011049781818%;
+    *margin-left: 45.47258361609775%;
+  }
+  .row-fluid .offset5:first-child {
+    margin-left: 42.81767955818182%;
+    *margin-left: 42.71015267646139%;
+  }
+  .row-fluid .offset4 {
+    margin-left: 37.01657458618182%;
+    *margin-left: 36.909047704461386%;
+  }
+  .row-fluid .offset4:first-child {
+    margin-left: 34.25414364654546%;
+    *margin-left: 34.146616764825026%;
+  }
+  .row-fluid .offset3 {
+    margin-left: 28.453038674545454%;
+    *margin-left: 28.34551179282502%;
+  }
+  .row-fluid .offset3:first-child {
+    margin-left: 25.69060773490909%;
+    *margin-left: 25.583080853188658%;
+  }
+  .row-fluid .offset2 {
+    margin-left: 19.889502762909093%;
+    *margin-left: 19.78197588118866%;
+  }
+  .row-fluid .offset2:first-child {
+    margin-left: 17.12707182327273%;
+    *margin-left: 17.019544941552297%;
+  }
+  .row-fluid .offset1 {
+    margin-left: 11.325966851272728%;
+    *margin-left: 11.218439969552296%;
+  }
+  .row-fluid .offset1:first-child {
+    margin-left: 8.563535911636365%;
+    *margin-left: 8.456009029915933%;
+  }
+  .container-fluid {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Container Pod                                                             */
+  /*                                                                           */
+  /* ========================================================================= */
+  .container-pod {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+  .container-pod.container-pod-short {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .container-pod.container-pod-tall {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Row                                                                       */
+  /*                                                                           */
+  /* ========================================================================= */
+  .row-pod {
+    padding-bottom: 44px;
+  }
+  .row-pod.short {
+    padding-bottom: 22px;
+  }
+  .row-pod.tall {
+    padding-bottom: 88px;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+@media (max-width: 767px) {
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Fixed Grid                                                                */
+  /*                                                                           */
+  /* ========================================================================= */
+  .container {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Fluid Grid                                                                */
+  /*                                                                           */
+  /* ========================================================================= */
+  .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Container Pod                                                             */
+  /*                                                                           */
+  /* ========================================================================= */
+  .container-pod {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+  .container-pod.container-pod-short {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .container-pod.container-pod-tall {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Row                                                                       */
+  /*                                                                           */
+  /* ========================================================================= */
+  .spill {
+    margin-top: 44px;
+  }
+  .row-pod {
+    padding-bottom: 44px;
+  }
+  .row-pod.short {
+    padding-bottom: 22px;
+  }
+  .row-pod.tall {
+    padding-bottom: 88px;
+  }
+  .row {
+    margin-left: 0;
+  }
+  [class*="span"],
+  .row-fluid [class*="span"] {
+    float: none;
+    display: block;
+    width: auto;
+    margin-left: 0;
+  }
+  .row-fluid {
+    width: 100%;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+@media (max-width: 479px) {
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Container Pod                                                             */
+  /*                                                                           */
+  /* ========================================================================= */
+  .container-pod {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .container-pod.container-pod-short {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .container-pod.container-pod-tall {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Row                                                                       */
+  /*                                                                           */
+  /* ========================================================================= */
+  .spill {
+    margin-top: 30px;
+  }
+  .spill.short {
+    margin-top: 20px;
+  }
+  .spill.tall {
+    margin-top: 60px;
+  }
+  .row-pod {
+    padding-bottom: 30px;
+  }
+  .row-pod.short {
+    padding-bottom: 20px;
+  }
+  .row-pod.tall {
+    padding-bottom: 60px;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Layout                                                                    */
+/*                                                                           */
+/* ========================================================================= */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* layout/stage.less                                                         */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ========================================================================= */
+/*                                                                           */
+/* Stage                                                                     */
+/*                                                                           */
+/* ========================================================================= */
+#stage {
+  position: relative;
+}
+#stage .stage-pod {
+  position: relative;
+}
+#stage .stage-pod.stage-pod-light {
+  background: #f5f5f5;
+}
+#stage .stage-pod.stage-pod-dark {
+  background: #1f1f1f;
+}
+#stage .stage-pod.stage-pod-divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+@media (min-width: 1240px) {
+  
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+@media (min-width: 768px) and (max-width: 989px) {
+  
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+@media (max-width: 767px) {
+  
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+@media (max-width: 479px) {
+  
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* layout/header.less                                                        */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ========================================================================= */
+/*                                                                           */
+/* Header                                                                    */
+/*                                                                           */
+/* ========================================================================= */
+#header .logo {
+  display: block;
+  width: 200px;
+  height: 60px;
+  margin-bottom: 60px;
+  background: url(../images/logo.png) top left no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+#header .logo span {
+  display: none;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+@media (min-width: 1240px) {
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Header                                                                    */
+  /*                                                                           */
+  /* ========================================================================= */
+  #header .logo {
+    margin-bottom: 70px;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+@media (min-width: 768px) and (max-width: 989px) {
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Header                                                                    */
+  /*                                                                           */
+  /* ========================================================================= */
+  #header .logo {
+    margin-bottom: 44px;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+@media (max-width: 767px) {
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Header                                                                    */
+  /*                                                                           */
+  /* ========================================================================= */
+  #header .logo {
+    margin-bottom: 30px;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+@media (max-width: 479px) {
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Header                                                                    */
+  /*                                                                           */
+  /* ========================================================================= */
+  #header .logo {
+    margin-bottom: 30px;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* ========================================================================= */
+  /*                                                                           */
+  /* Header                                                                    */
+  /*                                                                           */
+  /* ========================================================================= */
+  #header .logo {
+    background-image: url(../images/logo@2x.png);
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Core                                                                      */
+/*                                                                           */
+/* ========================================================================= */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* core/typography.less                                                      */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ========================================================================= */
+/*                                                                           */
+/* Body Text                                                                 */
+/*                                                                           */
+/* ========================================================================= */
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #999999;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px 0px 15px 0px;
+}
+p strong {
+  color: #7a7a7a;
+}
+p.justified {
+  text-align: justify;
+}
+p.emphasize,
+p .emphasize {
+  font-weight: 600;
+  color: #1f1f1f;
+}
+p.tall {
+  margin-bottom: 22.5px;
+}
+p.short {
+  margin-bottom: 7.5px;
+}
+p.right {
+  text-align: right;
+}
+p.lead {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #adadad;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0px 0px 40px 0px;
+}
+p.lead.emphasize,
+p.lead .emphasize {
+  font-weight: 500;
+  color: #7a7a7a;
+}
+p.lead.tall {
+  margin-bottom: 60px;
+}
+p.lead.short {
+  margin-bottom: 20px;
+}
+p.lead.inverted {
+  color: #adadad;
+}
+p.lead.inverted.emphasize,
+p.lead.inverted .emphasize {
+  color: #adadad;
+}
+p.small {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #adadad;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 16px;
+  margin: 0px 0px 15px 0px;
+}
+p.small.emphasize,
+p.small .emphasize {
+  font-weight: 500;
+  color: #999999;
+}
+p.small.tall {
+  margin-bottom: 22.5px;
+}
+p.small.short {
+  margin-bottom: 7.5px;
+}
+p.small.inverted {
+  color: #adadad;
+}
+p.small.inverted.emphasize,
+p.small.inverted .emphasize {
+  color: #adadad;
+}
+p.inverted {
+  color: #adadad;
+}
+p.inverted.emphasize,
+p.inverted .emphasize {
+  color: #ffffff;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Headings                                                                  */
+/*                                                                           */
+/* ========================================================================= */
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+  text-transform: none;
+}
+h1 .icon,
+h2 .icon,
+h3 .icon,
+h4 .icon,
+h5 .icon,
+h6 .icon {
+  vertical-align: text-top;
+}
+h1,
+.h1-clone {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1f1f1f;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 68px;
+  margin: 0px 0px 60px 0px;
+  text-transform: normal;
+}
+h1 a,
+.h1-clone a {
+  color: #1f1f1f;
+}
+h1 a:hover,
+.h1-clone a:hover {
+  color: #3f8eb0;
+}
+h1 .icon.icon-mini,
+.h1-clone .icon.icon-mini {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h1 .icon.icon-small,
+.h1-clone .icon.icon-small {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h1 .icon.icon-medium,
+.h1-clone .icon.icon-medium {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h1 .icon.icon-large,
+.h1-clone .icon.icon-large {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h1 .icon.icon-jumbo,
+.h1-clone .icon.icon-jumbo {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h1.tall,
+.h1-clone.tall {
+  margin-bottom: 90px;
+}
+h1.short,
+.h1-clone.short {
+  margin-bottom: 30px;
+}
+h1.emphasize,
+.h1-clone.emphasize,
+h1 .emphasize,
+.h1-clone .emphasize {
+  font-weight: 300;
+  color: #3f8eb0;
+}
+h1.inverted,
+.h1-clone.inverted {
+  color: #ffffff;
+}
+h1.inverted.emphasize,
+.h1-clone.inverted.emphasize,
+h1.inverted .emphasize,
+.h1-clone.inverted .emphasize {
+  color: #ffffff;
+}
+.h2,
+.h2-clone {
+  margin-top: 120px;
+}
+h2,
+.h2-clone {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1f1f1f;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 48px;
+  margin: 0px 0px 37.5px 0px;
+  text-transform: normal;
+}
+h2 a,
+.h2-clone a {
+  color: #1f1f1f;
+}
+h2 a:hover,
+.h2-clone a:hover {
+  color: #3f8eb0;
+}
+h2 .icon.icon-mini,
+.h2-clone .icon.icon-mini {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h2 .icon.icon-small,
+.h2-clone .icon.icon-small {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h2 .icon.icon-medium,
+.h2-clone .icon.icon-medium {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h2 .icon.icon-large,
+.h2-clone .icon.icon-large {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h2 .icon.icon-jumbo,
+.h2-clone .icon.icon-jumbo {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h2.tall,
+.h2-clone.tall {
+  margin-bottom: 63px;
+}
+h2.short,
+.h2-clone.short {
+  margin-bottom: 21px;
+}
+h2.emphasize,
+.h2-clone.emphasize,
+h2 .emphasize,
+.h2-clone .emphasize {
+  font-weight: 300;
+  color: #000000;
+}
+h2.inverted,
+.h2-clone.inverted {
+  color: #ffffff;
+}
+h2.inverted.emphasize,
+.h2-clone.inverted.emphasize,
+h2.inverted .emphasize,
+.h2-clone.inverted .emphasize {
+  color: #ffffff;
+}
+.h1 + h2,
+.h1-clone + h2,
+.h1 + h2.clone,
+.h1-clone + h2.clone {
+  margin-top: 75px;
+}
+h3,
+.h3-clone {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1f1f1f;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 38px;
+  margin: 0px 0px 37.5px 0px;
+  text-transform: uppercase;
+}
+h3 a,
+.h3-clone a {
+  color: #1f1f1f;
+}
+h3 a:hover,
+.h3-clone a:hover {
+  color: #3f8eb0;
+}
+h3 .icon.icon-mini,
+.h3-clone .icon.icon-mini {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h3 .icon.icon-small,
+.h3-clone .icon.icon-small {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h3 .icon.icon-medium,
+.h3-clone .icon.icon-medium {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h3 .icon.icon-large,
+.h3-clone .icon.icon-large {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h3 .icon.icon-jumbo,
+.h3-clone .icon.icon-jumbo {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h3.tall,
+.h3-clone.tall {
+  margin-bottom: 39px;
+}
+h3.short,
+.h3-clone.short {
+  margin-bottom: 13px;
+}
+h3.emphasize,
+.h3-clone.emphasize,
+h3 .emphasize,
+.h3-clone .emphasize {
+  font-weight: 600;
+  color: #3f8eb0;
+}
+h3.inverted,
+.h3-clone.inverted {
+  color: #ffffff;
+}
+h3.inverted.emphasize,
+.h3-clone.inverted.emphasize,
+h3.inverted .emphasize,
+.h3-clone.inverted .emphasize {
+  color: #ffffff;
+}
+h4,
+.h4-clone {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #999999;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0px 0px 22.5px 0px;
+  text-transform: normal;
+}
+h4 a,
+.h4-clone a {
+  color: #999999;
+}
+h4 a:hover,
+.h4-clone a:hover {
+  color: #3f8eb0;
+}
+h4 .icon.icon-mini,
+.h4-clone .icon.icon-mini {
+  margin-top: 7px;
+  margin-right: 10px;
+}
+h4 .icon.icon-small,
+.h4-clone .icon.icon-small {
+  margin-top: 2px;
+  margin-right: 10px;
+}
+h4 .icon.icon-medium,
+.h4-clone .icon.icon-medium {
+  margin-top: -2px;
+  margin-right: 10px;
+}
+h4 .icon.icon-large,
+.h4-clone .icon.icon-large {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h4 .icon.icon-jumbo,
+.h4-clone .icon.icon-jumbo {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h4.tall,
+.h4-clone.tall {
+  margin-bottom: 36px;
+}
+h4.short,
+.h4-clone.short {
+  margin-bottom: 12px;
+}
+h4.emphasize,
+.h4-clone.emphasize,
+h4 .emphasize,
+.h4-clone .emphasize {
+  font-weight: 500;
+  color: #1f1f1f;
+}
+h4.inverted,
+.h4-clone.inverted {
+  color: #ffffff;
+}
+h4.inverted.emphasize,
+.h4-clone.inverted.emphasize,
+h4.inverted .emphasize,
+.h4-clone.inverted .emphasize {
+  color: #ffffff;
+}
+h5,
+.h5-clone {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3f8eb0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0px 0px 17.25px 0px;
+  text-transform: uppercase;
+}
+h5 a,
+.h5-clone a {
+  color: #3f8eb0;
+}
+h5 a:hover,
+.h5-clone a:hover {
+  color: #3f8eb0;
+}
+h5 .icon.icon-mini,
+.h5-clone .icon.icon-mini {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h5 .icon.icon-small,
+.h5-clone .icon.icon-small {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h5 .icon.icon-medium,
+.h5-clone .icon.icon-medium {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h5 .icon.icon-large,
+.h5-clone .icon.icon-large {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h5 .icon.icon-jumbo,
+.h5-clone .icon.icon-jumbo {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h5.tall,
+.h5-clone.tall {
+  margin-bottom: 27px;
+}
+h5.short,
+.h5-clone.short {
+  margin-bottom: 9px;
+}
+h5.emphasize,
+.h5-clone.emphasize,
+h5 .emphasize,
+.h5-clone .emphasize {
+  font-weight: 400;
+  color: #3f8eb0;
+}
+h5.inverted,
+.h5-clone.inverted {
+  color: #ffffff;
+}
+h5.inverted.emphasize,
+.h5-clone.inverted.emphasize,
+h5.inverted .emphasize,
+.h5-clone.inverted .emphasize {
+  color: #ffffff;
+}
+h6,
+.h6-clone {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3d3d3d;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 34.5px 0px 17.25px 0px;
+  text-transform: uppercase;
+}
+h6 a,
+.h6-clone a {
+  color: #3d3d3d;
+}
+h6 a:hover,
+.h6-clone a:hover {
+  color: #3f8eb0;
+}
+h6 .icon.icon-mini,
+.h6-clone .icon.icon-mini {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h6 .icon.icon-small,
+.h6-clone .icon.icon-small {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h6 .icon.icon-medium,
+.h6-clone .icon.icon-medium {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h6 .icon.icon-large,
+.h6-clone .icon.icon-large {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h6 .icon.icon-jumbo,
+.h6-clone .icon.icon-jumbo {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+h6.tall,
+.h6-clone.tall {
+  margin-bottom: 24px;
+}
+h6.short,
+.h6-clone.short {
+  margin-bottom: 8px;
+}
+h6.emphasize,
+.h6-clone.emphasize,
+h6 .emphasize,
+.h6-clone .emphasize {
+  font-weight: 600;
+  color: #1f1f1f;
+}
+h6.inverted,
+.h6-clone.inverted {
+  color: #ffffff;
+}
+h6.inverted.emphasize,
+.h6-clone.inverted.emphasize,
+h6.inverted .emphasize,
+.h6-clone.inverted .emphasize {
+  color: #ffffff;
+}
+p + h1,
+h1 + h1,
+.h1-clone + h1,
+h2 + h1,
+.h2-clone + h1,
+h3 + h1,
+.h3-clone + h1,
+h4 + h1,
+.h4-clone + h1,
+h5 + h1,
+.h5-clone + h1,
+h6 + h1,
+.h6-clone + h1,
+p + .h1-clone,
+h1 + .h1-clone,
+.h1-clone + .h1-clone,
+h2 + .h1-clone,
+.h2-clone + .h1-clone,
+h3 + .h1-clone,
+.h3-clone + .h1-clone,
+h4 + .h1-clone,
+.h4-clone + .h1-clone,
+h5 + .h1-clone,
+.h5-clone + .h1-clone,
+h6 + .h1-clone,
+.h6-clone + .h1-clone {
+  margin-top: 120px;
+}
+p + h2,
+h1 + h2,
+.h1-clone + h2,
+h2 + h2,
+.h2-clone + h2,
+h3 + h2,
+.h3-clone + h2,
+h4 + h2,
+.h4-clone + h2,
+h5 + h2,
+.h5-clone + h2,
+h6 + h2,
+.h6-clone + h2,
+p + .h2-clone,
+h1 + .h2-clone,
+.h1-clone + .h2-clone,
+h2 + .h2-clone,
+.h2-clone + .h2-clone,
+h3 + .h2-clone,
+.h3-clone + .h2-clone,
+h4 + .h2-clone,
+.h4-clone + .h2-clone,
+h5 + .h2-clone,
+.h5-clone + .h2-clone,
+h6 + .h2-clone,
+.h6-clone + .h2-clone {
+  margin-top: 75px;
+}
+p + h3,
+h1 + h3,
+.h1-clone + h3,
+h2 + h3,
+.h2-clone + h3,
+h3 + h3,
+.h3-clone + h3,
+h4 + h3,
+.h4-clone + h3,
+h5 + h3,
+.h5-clone + h3,
+h6 + h3,
+.h6-clone + h3,
+p + .h3-clone,
+h1 + .h3-clone,
+.h1-clone + .h3-clone,
+h2 + .h3-clone,
+.h2-clone + .h3-clone,
+h3 + .h3-clone,
+.h3-clone + .h3-clone,
+h4 + .h3-clone,
+.h4-clone + .h3-clone,
+h5 + .h3-clone,
+.h5-clone + .h3-clone,
+h6 + .h3-clone,
+.h6-clone + .h3-clone {
+  margin-top: 75px;
+}
+p + h4,
+h1 + h4,
+.h1-clone + h4,
+h2 + h4,
+.h2-clone + h4,
+h3 + h4,
+.h3-clone + h4,
+h4 + h4,
+.h4-clone + h4,
+h5 + h4,
+.h5-clone + h4,
+h6 + h4,
+.h6-clone + h4,
+p + .h4-clone,
+h1 + .h4-clone,
+.h1-clone + .h4-clone,
+h2 + .h4-clone,
+.h2-clone + .h4-clone,
+h3 + .h4-clone,
+.h3-clone + .h4-clone,
+h4 + .h4-clone,
+.h4-clone + .h4-clone,
+h5 + .h4-clone,
+.h5-clone + .h4-clone,
+h6 + .h4-clone,
+.h6-clone + .h4-clone {
+  margin-top: 45px;
+}
+p + h5,
+h1 + h5,
+.h1-clone + h5,
+h2 + h5,
+.h2-clone + h5,
+h3 + h5,
+.h3-clone + h5,
+h4 + h5,
+.h4-clone + h5,
+h5 + h5,
+.h5-clone + h5,
+h6 + h5,
+.h6-clone + h5,
+p + .h5-clone,
+h1 + .h5-clone,
+.h1-clone + .h5-clone,
+h2 + .h5-clone,
+.h2-clone + .h5-clone,
+h3 + .h5-clone,
+.h3-clone + .h5-clone,
+h4 + .h5-clone,
+.h4-clone + .h5-clone,
+h5 + .h5-clone,
+.h5-clone + .h5-clone,
+h6 + .h5-clone,
+.h6-clone + .h5-clone {
+  margin-top: 34.5px;
+}
+p + h6,
+h1 + h6,
+.h1-clone + h6,
+h2 + h6,
+.h2-clone + h6,
+h3 + h6,
+.h3-clone + h6,
+h4 + h6,
+.h4-clone + h6,
+h5 + h6,
+.h5-clone + h6,
+h6 + h6,
+.h6-clone + h6,
+p + .h6-clone,
+h1 + .h6-clone,
+.h1-clone + .h6-clone,
+h2 + .h6-clone,
+.h2-clone + .h6-clone,
+h3 + .h6-clone,
+.h3-clone + .h6-clone,
+h4 + .h6-clone,
+.h4-clone + .h6-clone,
+h5 + .h6-clone,
+.h5-clone + .h6-clone,
+h6 + .h6-clone,
+.h6-clone + .h6-clone {
+  margin-top: 34.5px;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Lists                                                                     */
+/*                                                                           */
+/* ========================================================================= */
+ul,
+ol {
+  margin: 0px 0px 15px 0px;
+  padding: 0px;
+  list-style-position: inside;
+}
+ul.tall,
+ol.tall {
+  margin-bottom: 22.5px;
+}
+ul.short,
+ol.short {
+  margin-bottom: 7.5px;
+}
+ul.centered li,
+ol.centered li {
+  text-align: center;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-top: 7.5px;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+li {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #999999;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 7.5px;
+}
+li:last-child {
+  margin-bottom: 0px;
+}
+ul {
+  list-style-type: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+ol.a {
+  list-style-type: lower-alpha;
+}
+ol.A {
+  list-style-type: upper-alpha;
+}
+ol.i {
+  list-style-type: lower-roman;
+}
+ol.I {
+  list-style-type: upper-roman;
+}
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0px;
+  list-style: none;
+}
+ul.unstyled li,
+ol.unstyled li {
+  padding-left: 0px;
+}
+dl {
+  margin-bottom: 15px;
+}
+dt,
+dd {
+  line-height: 24px;
+}
+dt {
+  font-weight: bold;
+  line-height: 23px;
+  margin-bottom: 15px;
+  color: #999999;
+}
+dd {
+  margin-left: 0px;
+  margin-bottom: 15px;
+}
+.dl-horizontal dt {
+  float: left;
+  width: 120px;
+  clear: left;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dl-horizontal dd {
+  margin-left: 130px;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Miscellaneous                                                             */
+/*                                                                           */
+/* ========================================================================= */
+hr {
+  margin: 60px 0px 60px 0px;
+  border: 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: none;
+}
+hr.light {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+hr.short {
+  margin: 30px 0 30px 0;
+}
+hr.tall {
+  margin: 80px 0 80px 0;
+}
+hr.flush {
+  margin: 0px;
+}
+hr.narrow {
+  margin: 0 auto;
+  width: 120px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+hr.narrow.short {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+hr.narrow.tall {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+.muted {
+  color: #adadad;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #adadad;
+}
+abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+blockquote {
+  padding: 0px 0px 0px 7.5px;
+  margin: 0px 0px 15px 0px;
+  border-left: 5px solid #c2c2c2;
+}
+blockquote p {
+  margin-bottom: 0px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+}
+blockquote small {
+  display: block;
+  line-height: 24px;
+  color: #adadad;
+}
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+blockquote.pull-right {
+  float: right;
+  padding-right: 15px;
+  padding-left: 0px;
+  border-right: 5px solid #c2c2c2;
+  border-left: 0px;
+}
+blockquote.pull-right p,
+blockquote.pull-right small {
+  text-align: right;
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+address {
+  display: block;
+  margin-bottom: 15px;
+  font-style: normal;
+  line-height: 24px;
+}
+small {
+  font-size: 100%;
+}
+cite {
+  font-style: normal;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+@media (min-width: 1240px) {
+  /* ===================================================================== */
+  /*                                                                       */
+  /* Body Text                                                             */
+  /*                                                                       */
+  /* ===================================================================== */
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px 0px 15px 0px;
+  }
+  p.tall {
+    margin-bottom: 22.5px;
+  }
+  p.short {
+    margin-bottom: 7.5px;
+  }
+  p.right {
+    text-align: right;
+  }
+  p.lead {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0px 0px 40px 0px;
+  }
+  p.lead.tall {
+    margin-bottom: 60px;
+  }
+  p.lead.short {
+    margin-bottom: 20px;
+  }
+  p.small {
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0px 0px 15px 0px;
+  }
+  p.small.tall {
+    margin-bottom: 22.5px;
+  }
+  p.small.short {
+    margin-bottom: 7.5px;
+  }
+  /* ===================================================================== */
+  /*                                                                       */
+  /* Headings                                                              */
+  /*                                                                       */
+  /* ===================================================================== */
+  h1,
+  .h1-clone {
+    font-size: 60px;
+    line-height: 68px;
+    margin: 0px 0px 60px 0px;
+  }
+  h1 .icon.icon-mini,
+  .h1-clone .icon.icon-mini {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h1 .icon.icon-small,
+  .h1-clone .icon.icon-small {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h1 .icon.icon-medium,
+  .h1-clone .icon.icon-medium {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h1 .icon.icon-large,
+  .h1-clone .icon.icon-large {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h1 .icon.icon-jumbo,
+  .h1-clone .icon.icon-jumbo {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h1.tall,
+  .h1-clone.tall {
+    margin-bottom: 90px;
+  }
+  h1.short,
+  .h1-clone.short {
+    margin-bottom: 30px;
+  }
+  h2,
+  .h2-clone {
+    font-size: 42px;
+    line-height: 48px;
+    margin: 0px 0px 37.5px 0px;
+  }
+  h2 .icon.icon-mini,
+  .h2-clone .icon.icon-mini {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h2 .icon.icon-small,
+  .h2-clone .icon.icon-small {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h2 .icon.icon-medium,
+  .h2-clone .icon.icon-medium {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h2 .icon.icon-large,
+  .h2-clone .icon.icon-large {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h2 .icon.icon-jumbo,
+  .h2-clone .icon.icon-jumbo {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h2.tall,
+  .h2-clone.tall {
+    margin-bottom: 63px;
+  }
+  h2.short,
+  .h2-clone.short {
+    margin-bottom: 21px;
+  }
+  h3,
+  .h3-clone {
+    font-size: 26px;
+    line-height: 38px;
+    margin: 0px 0px 37.5px 0px;
+  }
+  h3 .icon.icon-mini,
+  .h3-clone .icon.icon-mini {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h3 .icon.icon-small,
+  .h3-clone .icon.icon-small {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h3 .icon.icon-medium,
+  .h3-clone .icon.icon-medium {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h3 .icon.icon-large,
+  .h3-clone .icon.icon-large {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h3 .icon.icon-jumbo,
+  .h3-clone .icon.icon-jumbo {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h3.tall,
+  .h3-clone.tall {
+    margin-bottom: 39px;
+  }
+  h3.short,
+  .h3-clone.short {
+    margin-bottom: 13px;
+  }
+  h4,
+  .h4-clone {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0px 0px 22.5px 0px;
+  }
+  h4 .icon.icon-mini,
+  .h4-clone .icon.icon-mini {
+    margin-top: 7px;
+    margin-right: 10px;
+  }
+  h4 .icon.icon-small,
+  .h4-clone .icon.icon-small {
+    margin-top: 2px;
+    margin-right: 10px;
+  }
+  h4 .icon.icon-medium,
+  .h4-clone .icon.icon-medium {
+    margin-top: -2px;
+    margin-right: 10px;
+  }
+  h4 .icon.icon-large,
+  .h4-clone .icon.icon-large {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h4 .icon.icon-jumbo,
+  .h4-clone .icon.icon-jumbo {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h4.tall,
+  .h4-clone.tall {
+    margin-bottom: 36px;
+  }
+  h4.short,
+  .h4-clone.short {
+    margin-bottom: 12px;
+  }
+  h5,
+  .h5-clone {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0px 0px 17.25px 0px;
+  }
+  h5 .icon.icon-mini,
+  .h5-clone .icon.icon-mini {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h5 .icon.icon-small,
+  .h5-clone .icon.icon-small {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h5 .icon.icon-medium,
+  .h5-clone .icon.icon-medium {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h5 .icon.icon-large,
+  .h5-clone .icon.icon-large {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h5 .icon.icon-jumbo,
+  .h5-clone .icon.icon-jumbo {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h5.tall,
+  .h5-clone.tall {
+    margin-bottom: 27px;
+  }
+  h5.short,
+  .h5-clone.short {
+    margin-bottom: 9px;
+  }
+  h6,
+  .h6-clone {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px 0px 17.25px 0px;
+  }
+  h6 .icon.icon-mini,
+  .h6-clone .icon.icon-mini {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h6 .icon.icon-small,
+  .h6-clone .icon.icon-small {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h6 .icon.icon-medium,
+  .h6-clone .icon.icon-medium {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h6 .icon.icon-large,
+  .h6-clone .icon.icon-large {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h6 .icon.icon-jumbo,
+  .h6-clone .icon.icon-jumbo {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h6.tall,
+  .h6-clone.tall {
+    margin-bottom: 24px;
+  }
+  h6.short,
+  .h6-clone.short {
+    margin-bottom: 8px;
+  }
+  p + h1,
+  h1 + h1,
+  .h1-clone + h1,
+  h2 + h1,
+  .h2-clone + h1,
+  h3 + h1,
+  .h3-clone + h1,
+  h4 + h1,
+  .h4-clone + h1,
+  h5 + h1,
+  .h5-clone + h1,
+  h6 + h1,
+  .h6-clone + h1,
+  p + .h1-clone,
+  h1 + .h1-clone,
+  .h1-clone + .h1-clone,
+  h2 + .h1-clone,
+  .h2-clone + .h1-clone,
+  h3 + .h1-clone,
+  .h3-clone + .h1-clone,
+  h4 + .h1-clone,
+  .h4-clone + .h1-clone,
+  h5 + .h1-clone,
+  .h5-clone + .h1-clone,
+  h6 + .h1-clone,
+  .h6-clone + .h1-clone {
+    margin-top: 120px;
+  }
+  p + h2,
+  h1 + h2,
+  .h1-clone + h2,
+  h2 + h2,
+  .h2-clone + h2,
+  h3 + h2,
+  .h3-clone + h2,
+  h4 + h2,
+  .h4-clone + h2,
+  h5 + h2,
+  .h5-clone + h2,
+  h6 + h2,
+  .h6-clone + h2,
+  p + .h2-clone,
+  h1 + .h2-clone,
+  .h1-clone + .h2-clone,
+  h2 + .h2-clone,
+  .h2-clone + .h2-clone,
+  h3 + .h2-clone,
+  .h3-clone + .h2-clone,
+  h4 + .h2-clone,
+  .h4-clone + .h2-clone,
+  h5 + .h2-clone,
+  .h5-clone + .h2-clone,
+  h6 + .h2-clone,
+  .h6-clone + .h2-clone {
+    margin-top: 75px;
+  }
+  p + h3,
+  h1 + h3,
+  .h1-clone + h3,
+  h2 + h3,
+  .h2-clone + h3,
+  h3 + h3,
+  .h3-clone + h3,
+  h4 + h3,
+  .h4-clone + h3,
+  h5 + h3,
+  .h5-clone + h3,
+  h6 + h3,
+  .h6-clone + h3,
+  p + .h3-clone,
+  h1 + .h3-clone,
+  .h1-clone + .h3-clone,
+  h2 + .h3-clone,
+  .h2-clone + .h3-clone,
+  h3 + .h3-clone,
+  .h3-clone + .h3-clone,
+  h4 + .h3-clone,
+  .h4-clone + .h3-clone,
+  h5 + .h3-clone,
+  .h5-clone + .h3-clone,
+  h6 + .h3-clone,
+  .h6-clone + .h3-clone {
+    margin-top: 75px;
+  }
+  p + h4,
+  h1 + h4,
+  .h1-clone + h4,
+  h2 + h4,
+  .h2-clone + h4,
+  h3 + h4,
+  .h3-clone + h4,
+  h4 + h4,
+  .h4-clone + h4,
+  h5 + h4,
+  .h5-clone + h4,
+  h6 + h4,
+  .h6-clone + h4,
+  p + .h4-clone,
+  h1 + .h4-clone,
+  .h1-clone + .h4-clone,
+  h2 + .h4-clone,
+  .h2-clone + .h4-clone,
+  h3 + .h4-clone,
+  .h3-clone + .h4-clone,
+  h4 + .h4-clone,
+  .h4-clone + .h4-clone,
+  h5 + .h4-clone,
+  .h5-clone + .h4-clone,
+  h6 + .h4-clone,
+  .h6-clone + .h4-clone {
+    margin-top: 45px;
+  }
+  p + h5,
+  h1 + h5,
+  .h1-clone + h5,
+  h2 + h5,
+  .h2-clone + h5,
+  h3 + h5,
+  .h3-clone + h5,
+  h4 + h5,
+  .h4-clone + h5,
+  h5 + h5,
+  .h5-clone + h5,
+  h6 + h5,
+  .h6-clone + h5,
+  p + .h5-clone,
+  h1 + .h5-clone,
+  .h1-clone + .h5-clone,
+  h2 + .h5-clone,
+  .h2-clone + .h5-clone,
+  h3 + .h5-clone,
+  .h3-clone + .h5-clone,
+  h4 + .h5-clone,
+  .h4-clone + .h5-clone,
+  h5 + .h5-clone,
+  .h5-clone + .h5-clone,
+  h6 + .h5-clone,
+  .h6-clone + .h5-clone {
+    margin-top: 34.5px;
+  }
+  p + h6,
+  h1 + h6,
+  .h1-clone + h6,
+  h2 + h6,
+  .h2-clone + h6,
+  h3 + h6,
+  .h3-clone + h6,
+  h4 + h6,
+  .h4-clone + h6,
+  h5 + h6,
+  .h5-clone + h6,
+  h6 + h6,
+  .h6-clone + h6,
+  p + .h6-clone,
+  h1 + .h6-clone,
+  .h1-clone + .h6-clone,
+  h2 + .h6-clone,
+  .h2-clone + .h6-clone,
+  h3 + .h6-clone,
+  .h3-clone + .h6-clone,
+  h4 + .h6-clone,
+  .h4-clone + .h6-clone,
+  h5 + .h6-clone,
+  .h5-clone + .h6-clone,
+  h6 + .h6-clone,
+  .h6-clone + .h6-clone {
+    margin-top: 34.5px;
+  }
+  /* ===================================================================== */
+  /*                                                                       */
+  /* Lists                                                                 */
+  /*                                                                       */
+  /* ===================================================================== */
+  ul,
+  ol {
+    margin: 0px 0px 15px 0px;
+  }
+  ul.tall,
+  ol.tall {
+    margin-bottom: 22.5px;
+  }
+  ul.short,
+  ol.short {
+    margin-bottom: 7.5px;
+  }
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin-left: 15px;
+    margin-top: 7.5px;
+  }
+  li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 7.5px;
+  }
+  li:last-child {
+    margin-bottom: 0px;
+  }
+  dl {
+    margin-bottom: 15px;
+  }
+  dt,
+  dd {
+    line-height: 24px;
+  }
+  dt {
+    line-height: 23px;
+    margin-bottom: 15px;
+  }
+  dd {
+    margin-bottom: 15px;
+  }
+  /* ===================================================================== */
+  /*                                                                       */
+  /* Miscellaneous                                                         */
+  /*                                                                       */
+  /* ===================================================================== */
+  hr {
+    margin: 70px 0px 70px 0px;
+  }
+  hr.short {
+    margin: 35px 0px 35px 0px;
+  }
+  hr.tall {
+    margin: 100px 0px 100px 0px;
+  }
+  hr.narrow {
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  hr.narrow.short {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  hr.narrow.tall {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  blockquote {
+    padding: 0px 0px 0px 7.5px;
+    margin: 0px 0px 15px 0px;
+  }
+  blockquote p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+  }
+  blockquote small {
+    line-height: 24px;
+  }
+  address {
+    margin-bottom: 15px;
+    line-height: 24px;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+@media (min-width: 768px) and (max-width: 989px) {
+  /* ===================================================================== */
+  /*                                                                       */
+  /* Body Text                                                             */
+  /*                                                                       */
+  /* ===================================================================== */
+  p {
+    font-size: 14.4px;
+    line-height: 21.6px;
+    margin: 0px 0px 13.5px 0px;
+  }
+  p.tall {
+    margin-bottom: 20.25px;
+  }
+  p.short {
+    margin-bottom: 6.75px;
+  }
+  p.right {
+    text-align: right;
+  }
+  p.lead {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0px 0px 40px 0px;
+  }
+  p.lead.tall {
+    margin-bottom: 60px;
+  }
+  p.lead.short {
+    margin-bottom: 20px;
+  }
+  p.small {
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0px 0px 15px 0px;
+  }
+  p.small.tall {
+    margin-bottom: 22.5px;
+  }
+  p.small.short {
+    margin-bottom: 7.5px;
+  }
+  /* ====================================================================== */
+  /*                                                                        */
+  /* Headings                                                               */
+  /*                                                                        */
+  /* ====================================================================== */
+  h1,
+  .h1-clone {
+    font-size: 48px;
+    line-height: 54.400000000000006px;
+    margin: 0px 0px 48px 0px;
+  }
+  h1 .icon.icon-mini,
+  .h1-clone .icon.icon-mini {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h1 .icon.icon-small,
+  .h1-clone .icon.icon-small {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h1 .icon.icon-medium,
+  .h1-clone .icon.icon-medium {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h1 .icon.icon-large,
+  .h1-clone .icon.icon-large {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h1 .icon.icon-jumbo,
+  .h1-clone .icon.icon-jumbo {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h1.tall,
+  .h1-clone.tall {
+    margin-bottom: 72px;
+  }
+  h1.short,
+  .h1-clone.short {
+    margin-bottom: 24px;
+  }
+  h2,
+  .h2-clone {
+    font-size: 33.6px;
+    line-height: 38.400000000000006px;
+    margin: 0px 0px 30px 0px;
+  }
+  h2 .icon.icon-mini,
+  .h2-clone .icon.icon-mini {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h2 .icon.icon-small,
+  .h2-clone .icon.icon-small {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h2 .icon.icon-medium,
+  .h2-clone .icon.icon-medium {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h2 .icon.icon-large,
+  .h2-clone .icon.icon-large {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h2 .icon.icon-jumbo,
+  .h2-clone .icon.icon-jumbo {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h2.tall,
+  .h2-clone.tall {
+    margin-bottom: 50.400000000000006px;
+  }
+  h2.short,
+  .h2-clone.short {
+    margin-bottom: 16.8px;
+  }
+  h3,
+  .h3-clone {
+    font-size: 20.8px;
+    line-height: 30.400000000000002px;
+    margin: 0px 0px 30px 0px;
+  }
+  h3 .icon.icon-mini,
+  .h3-clone .icon.icon-mini {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h3 .icon.icon-small,
+  .h3-clone .icon.icon-small {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h3 .icon.icon-medium,
+  .h3-clone .icon.icon-medium {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h3 .icon.icon-large,
+  .h3-clone .icon.icon-large {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h3 .icon.icon-jumbo,
+  .h3-clone .icon.icon-jumbo {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h3.tall,
+  .h3-clone.tall {
+    margin-bottom: 31.200000000000003px;
+  }
+  h3.short,
+  .h3-clone.short {
+    margin-bottom: 10.4px;
+  }
+  h4,
+  .h4-clone {
+    font-size: 19.200000000000003px;
+    line-height: 25.6px;
+    margin: 0px 0px 18px 0px;
+  }
+  h4 .icon.icon-mini,
+  .h4-clone .icon.icon-mini {
+    margin-top: 4px;
+    margin-right: 10px;
+  }
+  h4 .icon.icon-small,
+  .h4-clone .icon.icon-small {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h4 .icon.icon-medium,
+  .h4-clone .icon.icon-medium {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h4 .icon.icon-large,
+  .h4-clone .icon.icon-large {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h4 .icon.icon-jumbo,
+  .h4-clone .icon.icon-jumbo {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h4.tall,
+  .h4-clone.tall {
+    margin-bottom: 28.8px;
+  }
+  h4.short,
+  .h4-clone.short {
+    margin-bottom: 9.600000000000001px;
+  }
+  h5,
+  .h5-clone {
+    font-size: 14.4px;
+    line-height: 17.6px;
+    margin: 0px 0px 13.8px 0px;
+  }
+  h5 .icon.icon-mini,
+  .h5-clone .icon.icon-mini {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h5 .icon.icon-small,
+  .h5-clone .icon.icon-small {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h5 .icon.icon-medium,
+  .h5-clone .icon.icon-medium {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h5 .icon.icon-large,
+  .h5-clone .icon.icon-large {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h5 .icon.icon-jumbo,
+  .h5-clone .icon.icon-jumbo {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h5.tall,
+  .h5-clone.tall {
+    margin-bottom: 21.6px;
+  }
+  h5.short,
+  .h5-clone.short {
+    margin-bottom: 7.2px;
+  }
+  h6,
+  .h6-clone {
+    font-size: 12.8px;
+    line-height: 16px;
+    margin: 0px 0px 13.8px 0px;
+  }
+  h6 .icon.icon-mini,
+  .h6-clone .icon.icon-mini {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h6 .icon.icon-small,
+  .h6-clone .icon.icon-small {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h6 .icon.icon-medium,
+  .h6-clone .icon.icon-medium {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h6 .icon.icon-large,
+  .h6-clone .icon.icon-large {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h6 .icon.icon-jumbo,
+  .h6-clone .icon.icon-jumbo {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h6.tall,
+  .h6-clone.tall {
+    margin-bottom: 19.200000000000003px;
+  }
+  h6.short,
+  .h6-clone.short {
+    margin-bottom: 6.4px;
+  }
+  p + h1,
+  h1 + h1,
+  .h1-clone + h1,
+  h2 + h1,
+  .h2-clone + h1,
+  h3 + h1,
+  .h3-clone + h1,
+  h4 + h1,
+  .h4-clone + h1,
+  h5 + h1,
+  .h5-clone + h1,
+  h6 + h1,
+  .h6-clone + h1,
+  p + .h1-clone,
+  h1 + .h1-clone,
+  .h1-clone + .h1-clone,
+  h2 + .h1-clone,
+  .h2-clone + .h1-clone,
+  h3 + .h1-clone,
+  .h3-clone + .h1-clone,
+  h4 + .h1-clone,
+  .h4-clone + .h1-clone,
+  h5 + .h1-clone,
+  .h5-clone + .h1-clone,
+  h6 + .h1-clone,
+  .h6-clone + .h1-clone {
+    margin-top: 96px;
+  }
+  p + h2,
+  h1 + h2,
+  .h1-clone + h2,
+  h2 + h2,
+  .h2-clone + h2,
+  h3 + h2,
+  .h3-clone + h2,
+  h4 + h2,
+  .h4-clone + h2,
+  h5 + h2,
+  .h5-clone + h2,
+  h6 + h2,
+  .h6-clone + h2,
+  p + .h2-clone,
+  h1 + .h2-clone,
+  .h1-clone + .h2-clone,
+  h2 + .h2-clone,
+  .h2-clone + .h2-clone,
+  h3 + .h2-clone,
+  .h3-clone + .h2-clone,
+  h4 + .h2-clone,
+  .h4-clone + .h2-clone,
+  h5 + .h2-clone,
+  .h5-clone + .h2-clone,
+  h6 + .h2-clone,
+  .h6-clone + .h2-clone {
+    margin-top: 60px;
+  }
+  p + h3,
+  h1 + h3,
+  .h1-clone + h3,
+  h2 + h3,
+  .h2-clone + h3,
+  h3 + h3,
+  .h3-clone + h3,
+  h4 + h3,
+  .h4-clone + h3,
+  h5 + h3,
+  .h5-clone + h3,
+  h6 + h3,
+  .h6-clone + h3,
+  p + .h3-clone,
+  h1 + .h3-clone,
+  .h1-clone + .h3-clone,
+  h2 + .h3-clone,
+  .h2-clone + .h3-clone,
+  h3 + .h3-clone,
+  .h3-clone + .h3-clone,
+  h4 + .h3-clone,
+  .h4-clone + .h3-clone,
+  h5 + .h3-clone,
+  .h5-clone + .h3-clone,
+  h6 + .h3-clone,
+  .h6-clone + .h3-clone {
+    margin-top: 60px;
+  }
+  p + h4,
+  h1 + h4,
+  .h1-clone + h4,
+  h2 + h4,
+  .h2-clone + h4,
+  h3 + h4,
+  .h3-clone + h4,
+  h4 + h4,
+  .h4-clone + h4,
+  h5 + h4,
+  .h5-clone + h4,
+  h6 + h4,
+  .h6-clone + h4,
+  p + .h4-clone,
+  h1 + .h4-clone,
+  .h1-clone + .h4-clone,
+  h2 + .h4-clone,
+  .h2-clone + .h4-clone,
+  h3 + .h4-clone,
+  .h3-clone + .h4-clone,
+  h4 + .h4-clone,
+  .h4-clone + .h4-clone,
+  h5 + .h4-clone,
+  .h5-clone + .h4-clone,
+  h6 + .h4-clone,
+  .h6-clone + .h4-clone {
+    margin-top: 36px;
+  }
+  p + h5,
+  h1 + h5,
+  .h1-clone + h5,
+  h2 + h5,
+  .h2-clone + h5,
+  h3 + h5,
+  .h3-clone + h5,
+  h4 + h5,
+  .h4-clone + h5,
+  h5 + h5,
+  .h5-clone + h5,
+  h6 + h5,
+  .h6-clone + h5,
+  p + .h5-clone,
+  h1 + .h5-clone,
+  .h1-clone + .h5-clone,
+  h2 + .h5-clone,
+  .h2-clone + .h5-clone,
+  h3 + .h5-clone,
+  .h3-clone + .h5-clone,
+  h4 + .h5-clone,
+  .h4-clone + .h5-clone,
+  h5 + .h5-clone,
+  .h5-clone + .h5-clone,
+  h6 + .h5-clone,
+  .h6-clone + .h5-clone {
+    margin-top: 27.6px;
+  }
+  p + h6,
+  h1 + h6,
+  .h1-clone + h6,
+  h2 + h6,
+  .h2-clone + h6,
+  h3 + h6,
+  .h3-clone + h6,
+  h4 + h6,
+  .h4-clone + h6,
+  h5 + h6,
+  .h5-clone + h6,
+  h6 + h6,
+  .h6-clone + h6,
+  p + .h6-clone,
+  h1 + .h6-clone,
+  .h1-clone + .h6-clone,
+  h2 + .h6-clone,
+  .h2-clone + .h6-clone,
+  h3 + .h6-clone,
+  .h3-clone + .h6-clone,
+  h4 + .h6-clone,
+  .h4-clone + .h6-clone,
+  h5 + .h6-clone,
+  .h5-clone + .h6-clone,
+  h6 + .h6-clone,
+  .h6-clone + .h6-clone {
+    margin-top: 27.6px;
+  }
+  /* ===================================================================== */
+  /*                                                                       */
+  /* Lists                                                                 */
+  /*                                                                       */
+  /* ===================================================================== */
+  ul,
+  ol {
+    margin: 0px 0px 13.5px 0px;
+  }
+  ul.tall,
+  ol.tall {
+    margin-bottom: 20.25px;
+  }
+  ul.short,
+  ol.short {
+    margin-bottom: 6.75px;
+  }
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin-top: 6.75px;
+    margin-left: 13.5px;
+  }
+  li {
+    font-size: 14.4px;
+    line-height: 21.6px;
+    margin-bottom: 6.75px;
+  }
+  li:last-child {
+    margin-bottom: 0px;
+  }
+  dl {
+    margin-bottom: 13.5px;
+  }
+  dt,
+  dd {
+    line-height: 21.6px;
+  }
+  dt {
+    line-height: 20.6px;
+    margin-bottom: 13.5px;
+  }
+  dd {
+    margin-bottom: 13.5px;
+  }
+  /* ===================================================================== */
+  /*                                                                       */
+  /* Miscellaneous                                                         */
+  /*                                                                       */
+  /* ===================================================================== */
+  hr {
+    margin: 44px 0px 44px 0px;
+  }
+  hr.short {
+    margin: 22px 0px 22px 0px;
+  }
+  hr.tall {
+    margin: 88px 0px 88px 0px;
+  }
+  hr.narrow {
+    margin: 0 auto;
+    margin-top: 44px;
+    margin-bottom: 44px;
+  }
+  hr.narrow.short {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  hr.narrow.tall {
+    margin-top: 88px;
+    margin-bottom: 88px;
+  }
+  blockquote {
+    padding: 0px 0px 0px 6.75px;
+    margin: 0px 0px 13.5px 0px;
+  }
+  blockquote p {
+    font-size: 21.6px;
+    font-weight: 270;
+    line-height: 28.8px;
+  }
+  blockquote small {
+    line-height: 24px;
+  }
+  address {
+    margin-bottom: 13.5px;
+    line-height: 21.6px;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+@media (max-width: 767px) {
+  /* ===================================================================== */
+  /*                                                                       */
+  /* Body Text                                                             */
+  /*                                                                       */
+  /* ===================================================================== */
+  p {
+    font-size: 12.8px;
+    line-height: 19.200000000000003px;
+    margin: 0px 0px 12px 0px;
+  }
+  p.tall {
+    margin-bottom: 18px;
+  }
+  p.short {
+    margin-bottom: 6px;
+  }
+  p.right {
+    text-align: right;
+  }
+  p.lead {
+    font-size: 20.4px;
+    line-height: 27.2px;
+    margin: 0px 0px 34px 0px;
+  }
+  p.lead.tall {
+    margin-bottom: 51px;
+  }
+  p.lead.short {
+    margin-bottom: 17px;
+  }
+  p.small {
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0px 0px 15px 0px;
+  }
+  p.small.tall {
+    margin-bottom: 22.5px;
+  }
+  p.small.short {
+    margin-bottom: 7.5px;
+  }
+  /* ===================================================================== */
+  /*                                                                       */
+  /* Headings                                                              */
+  /*                                                                       */
+  /* ===================================================================== */
+  h1,
+  .h1-clone {
+    font-size: 42px;
+    line-height: 47.599999999999994px;
+    margin: 0px 0px 42px 0px;
+  }
+  h1.tall,
+  .h1-clone.tall {
+    margin-bottom: 62.99999999999999px;
+  }
+  h1.short,
+  .h1-clone.short {
+    margin-bottom: 21px;
+  }
+  h2,
+  .h2-clone {
+    font-size: 29.4px;
+    line-height: 33.599999999999994px;
+    margin: 0px 0px 26.25px 0px;
+  }
+  h2.tall,
+  .h2-clone.tall {
+    margin-bottom: 44.099999999999994px;
+  }
+  h2.short,
+  .h2-clone.short {
+    margin-bottom: 14.7px;
+  }
+  h3,
+  .h3-clone {
+    font-size: 18.2px;
+    line-height: 26.599999999999998px;
+    margin: 0px 0px 26.25px 0px;
+  }
+  h3.tall,
+  .h3-clone.tall {
+    margin-bottom: 27.299999999999997px;
+  }
+  h3.short,
+  .h3-clone.short {
+    margin-bottom: 9.1px;
+  }
+  h4,
+  .h4-clone {
+    font-size: 16.799999999999997px;
+    line-height: 22.4px;
+    margin: 0px 0px 15.749999999999998px 0px;
+  }
+  h4 .icon.icon-mini,
+  .h4-clone .icon.icon-mini {
+    margin-top: 3px;
+    margin-right: 10px;
+  }
+  h4 .icon.icon-small,
+  .h4-clone .icon.icon-small {
+    margin-top: -1px;
+    margin-right: 10px;
+  }
+  h4 .icon.icon-medium,
+  .h4-clone .icon.icon-medium {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h4 .icon.icon-large,
+  .h4-clone .icon.icon-large {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h4 .icon.icon-jumbo,
+  .h4-clone .icon.icon-jumbo {
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  h4.tall,
+  .h4-clone.tall {
+    margin-bottom: 25.2px;
+  }
+  h4.short,
+  .h4-clone.short {
+    margin-bottom: 8.399999999999999px;
+  }
+  h5,
+  .h5-clone {
+    font-size: 12.6px;
+    line-height: 15.399999999999999px;
+    margin: 0px 0px 12.075px 0px;
+  }
+  h5.tall,
+  .h5-clone.tall {
+    margin-bottom: 18.9px;
+  }
+  h5.short,
+  .h5-clone.short {
+    margin-bottom: 6.3px;
+  }
+  h6,
+  .h6-clone {
+    font-size: 12.8px;
+    line-height: 16px;
+    margin: 0px 0px 13.8px 0px;
+  }
+  h6.tall,
+  .h6-clone.tall {
+    margin-bottom: 19.200000000000003px;
+  }
+  h6.short,
+  .h6-clone.short {
+    margin-bottom: 6.4px;
+  }
+  p + h1,
+  h1 + h1,
+  .h1-clone + h1,
+  h2 + h1,
+  .h2-clone + h1,
+  h3 + h1,
+  .h3-clone + h1,
+  h4 + h1,
+  .h4-clone + h1,
+  h5 + h1,
+  .h5-clone + h1,
+  h6 + h1,
+  .h6-clone + h1,
+  p + .h1-clone,
+  h1 + .h1-clone,
+  .h1-clone + .h1-clone,
+  h2 + .h1-clone,
+  .h2-clone + .h1-clone,
+  h3 + .h1-clone,
+  .h3-clone + .h1-clone,
+  h4 + .h1-clone,
+  .h4-clone + .h1-clone,
+  h5 + .h1-clone,
+  .h5-clone + .h1-clone,
+  h6 + .h1-clone,
+  .h6-clone + .h1-clone {
+    margin-top: 84px;
+  }
+  p + h2,
+  h1 + h2,
+  .h1-clone + h2,
+  h2 + h2,
+  .h2-clone + h2,
+  h3 + h2,
+  .h3-clone + h2,
+  h4 + h2,
+  .h4-clone + h2,
+  h5 + h2,
+  .h5-clone + h2,
+  h6 + h2,
+  .h6-clone + h2,
+  p + .h2-clone,
+  h1 + .h2-clone,
+  .h1-clone + .h2-clone,
+  h2 + .h2-clone,
+  .h2-clone + .h2-clone,
+  h3 + .h2-clone,
+  .h3-clone + .h2-clone,
+  h4 + .h2-clone,
+  .h4-clone + .h2-clone,
+  h5 + .h2-clone,
+  .h5-clone + .h2-clone,
+  h6 + .h2-clone,
+  .h6-clone + .h2-clone {
+    margin-top: 52.5px;
+  }
+  p + h3,
+  h1 + h3,
+  .h1-clone + h3,
+  h2 + h3,
+  .h2-clone + h3,
+  h3 + h3,
+  .h3-clone + h3,
+  h4 + h3,
+  .h4-clone + h3,
+  h5 + h3,
+  .h5-clone + h3,
+  h6 + h3,
+  .h6-clone + h3,
+  p + .h3-clone,
+  h1 + .h3-clone,
+  .h1-clone + .h3-clone,
+  h2 + .h3-clone,
+  .h2-clone + .h3-clone,
+  h3 + .h3-clone,
+  .h3-clone + .h3-clone,
+  h4 + .h3-clone,
+  .h4-clone + .h3-clone,
+  h5 + .h3-clone,
+  .h5-clone + .h3-clone,
+  h6 + .h3-clone,
+  .h6-clone + .h3-clone {
+    margin-top: 52.5px;
+  }
+  p + h4,
+  h1 + h4,
+  .h1-clone + h4,
+  h2 + h4,
+  .h2-clone + h4,
+  h3 + h4,
+  .h3-clone + h4,
+  h4 + h4,
+  .h4-clone + h4,
+  h5 + h4,
+  .h5-clone + h4,
+  h6 + h4,
+  .h6-clone + h4,
+  p + .h4-clone,
+  h1 + .h4-clone,
+  .h1-clone + .h4-clone,
+  h2 + .h4-clone,
+  .h2-clone + .h4-clone,
+  h3 + .h4-clone,
+  .h3-clone + .h4-clone,
+  h4 + .h4-clone,
+  .h4-clone + .h4-clone,
+  h5 + .h4-clone,
+  .h5-clone + .h4-clone,
+  h6 + .h4-clone,
+  .h6-clone + .h4-clone {
+    margin-top: 31.499999999999996px;
+  }
+  p + h5,
+  h1 + h5,
+  .h1-clone + h5,
+  h2 + h5,
+  .h2-clone + h5,
+  h3 + h5,
+  .h3-clone + h5,
+  h4 + h5,
+  .h4-clone + h5,
+  h5 + h5,
+  .h5-clone + h5,
+  h6 + h5,
+  .h6-clone + h5,
+  p + .h5-clone,
+  h1 + .h5-clone,
+  .h1-clone + .h5-clone,
+  h2 + .h5-clone,
+  .h2-clone + .h5-clone,
+  h3 + .h5-clone,
+  .h3-clone + .h5-clone,
+  h4 + .h5-clone,
+  .h4-clone + .h5-clone,
+  h5 + .h5-clone,
+  .h5-clone + .h5-clone,
+  h6 + .h5-clone,
+  .h6-clone + .h5-clone {
+    margin-top: 24.15px;
+  }
+  p + h6,
+  h1 + h6,
+  .h1-clone + h6,
+  h2 + h6,
+  .h2-clone + h6,
+  h3 + h6,
+  .h3-clone + h6,
+  h4 + h6,
+  .h4-clone + h6,
+  h5 + h6,
+  .h5-clone + h6,
+  h6 + h6,
+  .h6-clone + h6,
+  p + .h6-clone,
+  h1 + .h6-clone,
+  .h1-clone + .h6-clone,
+  h2 + .h6-clone,
+  .h2-clone + .h6-clone,
+  h3 + .h6-clone,
+  .h3-clone + .h6-clone,
+  h4 + .h6-clone,
+  .h4-clone + .h6-clone,
+  h5 + .h6-clone,
+  .h5-clone + .h6-clone,
+  h6 + .h6-clone,
+  .h6-clone + .h6-clone {
+    margin-top: 27.6px;
+  }
+  /* ===================================================================== */
+  /*                                                                       */
+  /* Lists                                                                 */
+  /*                                                                       */
+  /* ===================================================================== */
+  ul,
+  ol {
+    margin: 0px 0px 12px 0px;
+  }
+  ul.tall,
+  ol.tall {
+    margin-bottom: 18px;
+  }
+  ul.short,
+  ol.short {
+    margin-bottom: 6px;
+  }
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin-left: 12px;
+    margin-top: 6px;
+  }
+  li {
+    font-size: 12.8px;
+    line-height: 19.200000000000003px;
+    margin-bottom: 6px;
+  }
+  li:last-child {
+    margin-bottom: 0px;
+  }
+  dl {
+    margin-bottom: 12px;
+  }
+  dt,
+  dd {
+    line-height: 19.200000000000003px;
+  }
+  dt {
+    line-height: 18.200000000000003px;
+    margin-bottom: 12px;
+  }
+  dd {
+    margin-bottom: 12px;
+  }
+  /* ===================================================================== */
+  /*                                                                       */
+  /* Miscellaneous                                                         */
+  /*                                                                       */
+  /* ===================================================================== */
+  hr {
+    margin: 44px 0px 44px 0px;
+  }
+  hr.short {
+    margin: 22px 0px 22px 0px;
+  }
+  hr.tall {
+    margin: 88px 0px 88px 0px;
+  }
+  hr.narrow {
+    margin: 0 auto;
+    margin-top: 44px;
+    margin-bottom: 44px;
+  }
+  hr.narrow.short {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  hr.narrow.tall {
+    margin-top: 88px;
+    margin-bottom: 88px;
+  }
+  blockquote {
+    padding: 0px 0px 0px 6px;
+    margin: 0px 0px 12px 0px;
+  }
+  blockquote p {
+    font-size: 19.200000000000003px;
+    font-weight: 240;
+    line-height: 25.6px;
+  }
+  blockquote small {
+    line-height: 24px;
+  }
+  address {
+    margin-bottom: 12px;
+    line-height: 19.200000000000003px;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+@media (max-width: 479px) {
+  
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* components/media.less                                                     */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ========================================================================= */
+/*                                                                           */
+/* Images                                                                    */
+/*                                                                           */
+/* ========================================================================= */
+img {
+  margin: 0px 0px 15px 0px;
+}
+img.responsive {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+}
+img.tall {
+  margin-bottom: 22.5px;
+}
+img.short {
+  margin-bottom: 7.5px;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Rounded Images                                                            */
+/*                                                                           */
+/* ========================================================================= */
+.img-wrapper-rounded {
+  margin-bottom: 24px;
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.img-wrapper-rounded img {
+  padding: 0;
+  margin: 0;
+}
+.img-wrapper-rounded.short {
+  margin-bottom: 12px;
+}
+.img-wrapper-rounded.tall {
+  margin-bottom: 48px;
+}
+.img-wrapper-rounded.taller {
+  margin-bottom: 96px;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Thumbnails                                                                */
+/*                                                                           */
+/* ========================================================================= */
+.thumbnails {
+  margin-top: -24px;
+  margin-left: -30px;
+  margin-bottom: 24px;
+  list-style: none;
+  *zoom: 1;
+}
+.thumbnails:before,
+.thumbnails:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.thumbnails:after {
+  clear: both;
+}
+.thumbnails.tall {
+  margin-bottom: 48px;
+}
+.row-fluid .thumbnails {
+  margin-left: 0;
+}
+.thumbnails > li {
+  float: left;
+  margin-top: 24px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  padding: 0;
+}
+.thumbnail {
+  float: left;
+  display: block;
+  padding: 5px;
+  line-height: 1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  background: #ffffff;
+  vertical-align: text-top;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+}
+.thumbnail [class*="span"] {
+  float: none;
+}
+a.thumbnail:hover {
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(64, 142, 176, 0.75), 0px 1px 5px 0px rgba(64, 142, 176, 0.5);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(64, 142, 176, 0.75), 0px 1px 5px 0px rgba(64, 142, 176, 0.5);
+  box-shadow: 0px 0px 0px 1px rgba(64, 142, 176, 0.75), 0px 1px 5px 0px rgba(64, 142, 176, 0.5);
+}
+a.thumbnail:hover.fancybox-media {
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(8, 176, 135, 0.75), 0px 1px 5px 0px rgba(8, 176, 135, 0.5);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(8, 176, 135, 0.75), 0px 1px 5px 0px rgba(8, 176, 135, 0.5);
+  box-shadow: 0px 0px 0px 1px rgba(8, 176, 135, 0.75), 0px 1px 5px 0px rgba(8, 176, 135, 0.5);
+}
+.thumbnail > img {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Hack needed for Chrome */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .thumbnail > img {
+    width: auto !important;
+    max-width: 100% !important;
+  }
+}
+@-moz-document url-prefix() {
+  
+}
+.thumbnail .caption {
+  padding: 9px;
+}
+.thumbnail .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -27px;
+  margin-top: -19px;
+}
+.thumbnail .btn.btn-large {
+  margin-left: -38px;
+  margin-top: -26px;
+}
+.thumbnail .zoom {
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  padding: 6px;
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.8));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.8)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.8));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.8));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.8));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#cc000000', GradientType=0);
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+.thumbnail .thumbnail-description-overlay {
+  position: absolute;
+  height: auto;
+  display: block;
+  background: rgba(0, 0, 0, 0.75);
+  bottom: 20px;
+  padding: 10px 15px 10px 15px;
+  font-size: 16px;
+  -webkit-border-radius: 0px 5px 5px 0px;
+  -moz-border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 5px 5px 0px;
+}
+.thumbnail .thumbnail-description-overlay .subtitle {
+  display: block;
+  font-size: 12px;
+  color: #adadad;
+  margin-top: 4px;
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Fancybox Override                                                         */
+/*                                                                           */
+/* ========================================================================= */
+.fancybox-wrap .fancybox-close {
+  top: -15px;
+  right: -15px;
+}
+.fancybox-wrap .fancybox-close,
+.fancybox-wrap .fancybox-nav.fancybox-next span,
+.fancybox-wrap .fancybox-nav.fancybox-prev span {
+  background-position: inherit !important;
+  width: auto !important;
+  height: auto !important;
+  line-height: 16px !important;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  padding: 6px !important;
+  border: 1px solid #361167;
+  background-image: -moz-linear-gradient(top, #a47cd9, #674397);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a47cd9), to(#674397));
+  background-image: -webkit-linear-gradient(top, #a47cd9, #674397);
+  background-image: -o-linear-gradient(top, #a47cd9, #674397);
+  background-image: linear-gradient(to bottom, #a47cd9, #674397);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa47cd9', endColorstr='#ff674397', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 0px 0px #c9adea, 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px 1px 0px 0px #c9adea, 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 1px 0px 0px #c9adea, 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+@media (min-width: 1240px) {
+  img {
+    margin: 0px 0px 15px 0px;
+  }
+  img.tall {
+    margin-bottom: 22.5px;
+  }
+  img.short {
+    margin-bottom: 7.5px;
+  }
+  /* ===================================================================== */
+  /*                                                                       */
+  /* Thumbnails                                                            */
+  /*                                                                       */
+  /* ===================================================================== */
+  .thumbnails {
+    margin-left: -40px;
+  }
+  .thumbnails > li {
+    margin-left: 40px;
+  }
+  .row-fluid .thumbnails {
+    margin-left: 0;
+  }
+  /* ====================================================================== */
+  /*                                                                        */
+  /* Slides                                                                 */
+  /*                                                                        */
+  /* ====================================================================== */
+  .slides {
+    display: block;
+    width: 1172px;
+    height: 490px;
+    position: relative;
+  }
+  .slides .slides-container {
+    width: 1172px;
+    height: 490px;
+  }
+  .slides .slides-container div {
+    width: 1172px;
+    height: 490px;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+@media (min-width: 768px) and (max-width: 989px) {
+  img {
+    margin: 0px 0px 13.5px 0px;
+  }
+  img.tall {
+    margin-bottom: 20.25px;
+  }
+  img.short {
+    margin-bottom: 6.75px;
+  }
+  /* ===================================================================== */
+  /*                                                                       */
+  /* Thumbnails                                                            */
+  /*                                                                       */
+  /* ===================================================================== */
+  .thumbnail .thumbnail-description-overlay {
+    padding: 7px 10px 7px 10px;
+    font-size: 13px;
+    bottom: 12px;
+  }
+  .thumbnail .thumbnail-description-overlay .subtitle {
+    font-size: 11px;
+  }
+  /* ====================================================================== */
+  /*                                                                        */
+  /* Slides                                                                 */
+  /*                                                                        */
+  /* ====================================================================== */
+  .slides {
+    display: block;
+    width: 724px;
+    height: 300px;
+    position: relative;
+  }
+  .slides .slides-container {
+    width: 724px;
+    height: 300px;
+  }
+  .slides .slides-container div {
+    width: 724px;
+    height: 300px;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+@media (max-width: 767px) {
+  img {
+    margin: 0px 0px 12px 0px;
+  }
+  img.tall {
+    margin-bottom: 18px;
+  }
+  img.short {
+    margin-bottom: 6px;
+  }
+  /* ===================================================================== */
+  /*                                                                       */
+  /* Thumbnails                                                            */
+  /*                                                                       */
+  /* ===================================================================== */
+  .thumbnails {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .thumbnails.spill-over {
+    margin-bottom: 24px !important;
+  }
+  .thumbnails > li {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    *zoom: 1;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .thumbnails > li:before,
+  .thumbnails > li:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .thumbnails > li:after {
+    clear: both;
+  }
+  .thumbnails > li:last-child {
+    margin-bottom: 0px;
+  }
+  .thumbnail {
+    float: none;
+    display: inline-block;
+  }
+  .thumbnail .thumbnail-description-overlay {
+    padding: 7px 10px 7px 10px;
+    font-size: 13px;
+    bottom: 12px;
+  }
+  .thumbnail .thumbnail-description-overlay .subtitle {
+    display: none;
+  }
+  /* ====================================================================== */
+  /*                                                                        */
+  /* Slides                                                                 */
+  /*                                                                        */
+  /* ====================================================================== */
+  .slides {
+    display: none;
+  }
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+@media (max-width: 479px) {
+  
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+/* ========================================================================= */
+/*                                                                           */
+/* Browser Conditional Styling                                               */
+/*                                                                           */
+/* ========================================================================= */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* browsers/ie.less                                                          */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* browsers/ie-9.less                                                        */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* browsers/ie-8.less                                                        */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* browsers/ie-7.less                                                        */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+html.ie7 {
+  /* Form Controls                                                             */
+
+  /*                                                                           */
+
+  /* ========================================================================= */
+
+}
+html.ie7 textarea,
+html.ie7 input[type="text"],
+html.ie7 input[type="password"],
+html.ie7 input[type="datetime"],
+html.ie7 input[type="datetime-local"],
+html.ie7 input[type="date"],
+html.ie7 input[type="month"],
+html.ie7 input[type="time"],
+html.ie7 input[type="week"],
+html.ie7 input[type="number"],
+html.ie7 input[type="email"],
+html.ie7 input[type="url"],
+html.ie7 input[type="search"],
+html.ie7 input[type="tel"],
+html.ie7 input[type="color"],
+html.ie7 .uneditable-input {
+  border: 1px solid #CCC;
+}
+html.ie7 textarea:focus,
+html.ie7 input[type="text"]:focus,
+html.ie7 input[type="password"]:focus,
+html.ie7 input[type="datetime"]:focus,
+html.ie7 input[type="datetime-local"]:focus,
+html.ie7 input[type="date"]:focus,
+html.ie7 input[type="month"]:focus,
+html.ie7 input[type="time"]:focus,
+html.ie7 input[type="week"]:focus,
+html.ie7 input[type="number"]:focus,
+html.ie7 input[type="email"]:focus,
+html.ie7 input[type="url"]:focus,
+html.ie7 input[type="search"]:focus,
+html.ie7 input[type="tel"]:focus,
+html.ie7 input[type="color"]:focus,
+html.ie7 .uneditable-input:focus {
+  border: 1px solid #3f8eb0;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* browsers/ie-6.less                                                        */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+html.ie6 {
+  /* Form Controls                                                             */
+
+  /*                                                                           */
+
+  /* ========================================================================= */
+
+}
+html.ie6 textarea,
+html.ie6 input[type="text"],
+html.ie6 input[type="password"],
+html.ie6 input[type="datetime"],
+html.ie6 input[type="datetime-local"],
+html.ie6 input[type="date"],
+html.ie6 input[type="month"],
+html.ie6 input[type="time"],
+html.ie6 input[type="week"],
+html.ie6 input[type="number"],
+html.ie6 input[type="email"],
+html.ie6 input[type="url"],
+html.ie6 input[type="search"],
+html.ie6 input[type="tel"],
+html.ie6 input[type="color"],
+html.ie6 .uneditable-input {
+  border: 1px solid #CCC;
+}
+html.ie6 textarea:focus,
+html.ie6 input[type="text"]:focus,
+html.ie6 input[type="password"]:focus,
+html.ie6 input[type="datetime"]:focus,
+html.ie6 input[type="datetime-local"]:focus,
+html.ie6 input[type="date"]:focus,
+html.ie6 input[type="month"]:focus,
+html.ie6 input[type="time"]:focus,
+html.ie6 input[type="week"]:focus,
+html.ie6 input[type="number"]:focus,
+html.ie6 input[type="email"]:focus,
+html.ie6 input[type="url"]:focus,
+html.ie6 input[type="search"]:focus,
+html.ie6 input[type="tel"]:focus,
+html.ie6 input[type="color"]:focus,
+html.ie6 .uneditable-input:focus {
+  border: 1px solid #3f8eb0;
+}

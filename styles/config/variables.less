@@ -1,0 +1,294 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* config/variables.less                                                     */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Colors                                                                    */
+/*                                                                           */
+/* ========================================================================= */
+
+// Grayscale
+
+@black:											#000000;
+@grayDarkest:									#1f1f1f;
+@grayDarker:									#3d3d3d;
+@grayDark:										#7a7a7a;
+@gray:											#999999;
+@grayLight:										#adadad;
+@grayLighter:									#c2c2c2;
+@grayLightest:									#f5f5f5;
+@white:											#ffffff;
+
+// Colors
+
+@primaryColor:									#3F8EB0;
+@secondaryColor:								#A61A3C;
+
+// Links
+
+@linkColor:										@primaryColor;
+@linkColorHover:								darken(@linkColor, 15%);
+@linkColorActive:								darken(@linkColor, 25%);
+
+// Scaffolding
+
+@bodyBackground:								@grayLightest;
+@borderColor:									rgba(0, 0, 0, 0.1);
+@borderColorLight:								rgba(255, 255, 255, 0.1);
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Scaffolding                                                               */
+/*                                                                           */
+/* ========================================================================= */
+
+// Z-index master list
+
+@zindexHeader:									1000;
+@zindexHeaderNavigation:						1001;
+@zindexHeaderLogo:								1002;
+@zindexDropdown:								1003;
+@zindexPopover:									1004;
+@zindexTooltip:									1005;
+@zindexModalBackdrop:							2000;
+@zindexModal:									2001;
+
+// Margins
+
+@primaryMargin:									60px;
+@primaryMarginWidescreen:						70px;
+@primaryMarginTablet:							44px;
+@primaryMarginMobile:							30px;
+
+@primaryMarginShort:							30px;
+@primaryMarginShortWidescreen:					35px;
+@primaryMarginShortTablet:						22px;
+@primaryMarginShortMobile:						20px;
+
+@primaryMarginTall:								80px;
+@primaryMarginTallWidescreen:					100px;
+@primaryMarginTallTablet:						88px;
+@primaryMarginTallMobile:						60px;
+
+// Resolutions
+
+@widescreen:									1240px;
+@defaultMax:									@widescreen - 1;
+@default:										990px;
+@tabletMax:										@default - 1;
+@tablet:										768px;
+@mobileLandscapeMax:							@tablet - 1;
+@mobileLandscape:								480px;
+@mobileMax:										@mobileLandscape - 1;
+
+// Fixed grid (@default to @widescreen)
+
+@gridColumns:									12;
+@gridColumnWidth:								50px;
+@gridGutterWidth:								30px;
+@gridRowWidth:									(@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+@gridColumnWidthWidescreen:						65px;
+@gridGutterWidthWidescreen:						35px;
+@gridRowWidthWidescreen:						(@gridColumns * @gridColumnWidthWidescreen) + (@gridGutterWidthWidescreen * (@gridColumns - 1));
+
+@gridColumnWidthTablet:							40px;
+@gridGutterWidthTablet:							22px;
+@gridRowWidthTablet:							(@gridColumns * @gridColumnWidthTablet) + (@gridGutterWidthTablet * (@gridColumns - 1));
+
+@gridGutterWidthMobile:							20px;
+
+// Fluid grid
+
+@fluidGridColumnWidth:							6.382978723%;
+@fluidGridGutterWidth:							(100 - (@fluidGridColumnWidth * @gridColumns)) / (@gridColumns - 1);
+@fluidGridColumnWidthWidescreen:				5.982905983%;
+@fluidGridGutterWidthWidescreen:				(100 - (@fluidGridColumnWidthWidescreen * @gridColumns)) / (@gridColumns - 1);
+@fluidGridColumnWidthTablet:					5.801104972%;
+@fluidGridGutterWidthTablet:					(100 - (@fluidGridColumnWidthTablet * @gridColumns)) / (@gridColumns - 1);
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Typography                                                                */
+/*                                                                           */
+/* ========================================================================= */
+
+// Font Families
+
+@fontFamilyPrimary:								"Helvetica Neue", Helvetica, Arial, sans-serif;
+@fontFamilySecondary:							"Helvetica Neue", Helvetica, Arial, sans-serif;
+@fontFamilyMonospace:							Monaco, Menlo, Consolas, "Courier New", monospace;
+
+// Text Margin Ratios
+
+@textMarginRatioTop:							2;
+@textMarginRatioTall:							1.5;
+@textMarginRatioShort:							0.5;
+
+// Body Text
+
+@bodyTextFontFamily:							@fontFamilyPrimary;
+@bodyTextFontSize:								16px;
+@bodyTextFontWeight:							300;
+@bodyTextColor:									@gray;
+@bodyTextLineHeight:							24px;
+@bodyTextMargin:								15px;
+@bodyTextEmphasisFontWeight:					600;
+@bodyTextEmphasisColor:							@grayDarkest;
+@bodyTextRatioWide:								1.0;
+@bodyTextRatioTablet:							0.9;
+@bodyTextRatioMobile:							0.8;
+@bodyTextInvertedColor:							@grayLight;
+@bodyTextInvertedEmphasisColor:					@white;
+
+// Lead Text
+
+@leadTextFontFamily:							@fontFamilyPrimary;
+@leadTextFontSize:								24px;
+@leadTextFontWeight:							300;
+@leadTextColor:									@grayLight;
+@leadTextLineHeight:							32px;
+@leadTextMargin:								40px;
+@leadTextTransform:								normal;
+@leadTextEmphasisFontWeight:					500;
+@leadTextEmphasisColor:							@grayDark;
+@leadTextRatioWide:								1.0;
+@leadTextRatioTablet:							1.0;
+@leadTextRatioMobile:							0.85;
+@leadTextInvertedColor:							@grayLight;
+@leadTextInvertedEmphasisColor:					@grayLight;
+
+// Small Text
+
+@smallTextFontFamily:							@fontFamilyPrimary;
+@smallTextFontSize:								11px;
+@smallTextFontWeight:							300;
+@smallTextColor:								@grayLight;
+@smallTextLineHeight:							16px;
+@smallTextMargin:								15px;
+@smallTextEmphasisFontWeight:					500;
+@smallTextEmphasisColor:						@gray;
+@smallTextRatioWide:							1.0;
+@smallTextRatioTablet:							1.0;
+@smallTextRatioMobile:							1.0;
+@smallTextInvertedColor:						@grayLight;
+@smallTextInvertedEmphasisColor:				@grayLight;
+
+// Muted Text
+
+@mutedTextFontWeight:							300;
+@mutedTextColor:								lighten(@grayLight, 15%);
+@mutedTextFontSize:								13px;
+@mutedTextEmphasisFontWeight:					500;
+@mutedTextEmphasisColor:						@gray;
+
+// Heading H1 Text
+
+@headingH1TextFontFamily:						@fontFamilySecondary;
+@headingH1TextFontSize:							60px;
+@headingH1TextFontWeight:						300;
+@headingH1TextColor:							@grayDarkest;
+@headingH1TextLineHeight:						68px;
+@headingH1TextMargin:							@bodyTextMargin * 4;
+@headingH1TextTransform:						normal;
+@headingH1TextEmphasisFontWeight:				300;
+@headingH1TextEmphasisColor:					@linkColor;
+@headingH1TextRatioWide:						1.0;
+@headingH1TextRatioTablet:						0.8;
+@headingH1TextRatioMobile:						0.7;
+@headingH1TextInvertedColor:					@white;
+@headingH1TextInvertedEmphasisColor:			@white;
+
+// Heading H2 Text
+
+@headingH2TextFontFamily:						@fontFamilySecondary;
+@headingH2TextFontSize:							42px;
+@headingH2TextFontWeight:						300;
+@headingH2TextColor:							@grayDarkest;
+@headingH2TextLineHeight:						48px;
+@headingH2TextMargin:							@bodyTextMargin * 2.5;
+@headingH2TextTransform:						normal;
+@headingH2TextEmphasisFontWeight:				300;
+@headingH2TextEmphasisColor:					@black;
+@headingH2TextRatioWide:						1.0;
+@headingH2TextRatioTablet:						0.8;
+@headingH2TextRatioMobile:						0.7;
+@headingH2TextInvertedColor:					@white;
+@headingH2TextInvertedEmphasisColor:			@white;
+
+// Heading H3 Text
+
+@headingH3TextFontFamily:						@fontFamilyPrimary;
+@headingH3TextFontSize:							26px;
+@headingH3TextFontWeight:						400;
+@headingH3TextColor:							@grayDarkest;
+@headingH3TextLineHeight:						38px;
+@headingH3TextMargin:							@bodyTextMargin * 2.5;
+@headingH3TextTransform:						uppercase;
+@headingH3TextEmphasisFontWeight:				600;
+@headingH3TextEmphasisColor:					@linkColor;
+@headingH3TextRatioWide:						1.0;
+@headingH3TextRatioTablet:						0.8;
+@headingH3TextRatioMobile:						0.7;
+@headingH3TextInvertedColor:					@white;
+@headingH3TextInvertedEmphasisColor:			@white;
+
+// Heading H4 Text
+
+@headingH4TextFontFamily:						@fontFamilyPrimary;
+@headingH4TextFontSize:							24px;
+@headingH4TextFontWeight:						300;
+@headingH4TextColor:							@gray;
+@headingH4TextLineHeight:						32px;
+@headingH4TextMargin:							@bodyTextMargin * 1.5;
+@headingH4TextTransform:						normal;
+@headingH4TextEmphasisFontWeight:				500;
+@headingH4TextEmphasisColor:					@grayDarkest;
+@headingH4TextRatioWide:						1.0;
+@headingH4TextRatioTablet:						0.8;
+@headingH4TextRatioMobile:						0.7;
+@headingH4TextInvertedColor:					@white;
+@headingH4TextInvertedEmphasisColor:			@white;
+
+// Heading H5 Text
+
+@headingH5TextFontFamily:						@fontFamilyPrimary;
+@headingH5TextFontSize:							18px;
+@headingH5TextFontWeight:						400;
+@headingH5TextColor:							@primaryColor;
+@headingH5TextLineHeight:						22px;
+@headingH5TextMargin:							@bodyTextMargin * 1.15;
+@headingH5TextTransform:						uppercase;
+@headingH5TextEmphasisFontWeight:				400;
+@headingH5TextEmphasisColor:					@linkColor;
+@headingH5TextRatioWide:						1.0;
+@headingH5TextRatioTablet:						0.8;
+@headingH5TextRatioMobile:						0.7;
+@headingH5TextInvertedColor:					@white;
+@headingH5TextInvertedEmphasisColor:			@white;
+
+// Heading H6 Text
+
+@headingH6TextFontFamily:						@fontFamilyPrimary;
+@headingH6TextFontSize:							16px;
+@headingH6TextFontWeight:						400;
+@headingH6TextColor:							@grayDarker;
+@headingH6TextLineHeight:						20px;
+@headingH6TextMargin:							@bodyTextMargin * 1.15;
+@headingH6TextTransform:						uppercase;
+@headingH6TextEmphasisFontWeight:				600;
+@headingH6TextEmphasisColor:					@grayDarkest;
+@headingH6TextRatioWide:						1.0;
+@headingH6TextRatioTablet:						0.8;
+@headingH6TextRatioMobile:						0.8;
+@headingH6TextInvertedColor:					@white;
+@headingH6TextInvertedEmphasisColor:			@white;

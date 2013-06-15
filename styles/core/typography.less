@@ -1,0 +1,3044 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*                                                                           */
+/* core/typography.less                                                      */
+/*                                                                           */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Body Text                                                                 */
+/*                                                                           */
+/* ========================================================================= */
+
+p {
+	
+	font-family: @bodyTextFontFamily;
+	color: @bodyTextColor;
+	font-weight: @bodyTextFontWeight;
+	font-size: @bodyTextFontSize;
+	line-height: @bodyTextLineHeight;
+	margin: 0px 0px @bodyTextMargin 0px;
+	
+	strong {
+		
+		color: @grayDark;
+		
+	}
+	
+	&.justified {
+		
+		text-align: justify;
+		
+	}
+	
+	&.emphasize,
+	.emphasize {
+		
+		font-weight: @bodyTextEmphasisFontWeight;
+		color: @bodyTextEmphasisColor;
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @bodyTextMargin * @textMarginRatioTall;
+		
+	}
+		
+	&.short {
+		
+		margin-bottom: @bodyTextMargin * @textMarginRatioShort;
+		
+	}
+	
+	&.right {
+		
+		text-align: right;
+		
+	}
+	
+	&.lead {
+		
+		font-family: @leadTextFontFamily;
+		color: @leadTextColor;
+		font-weight: @leadTextFontWeight;
+		font-size: @leadTextFontSize;
+		line-height: @leadTextLineHeight;
+		margin: 0px 0px @leadTextMargin 0px;
+		
+		&.emphasize,
+		.emphasize {
+			
+			font-weight: @leadTextEmphasisFontWeight;
+			color: @leadTextEmphasisColor;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @leadTextMargin * @textMarginRatioTall;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @leadTextMargin * @textMarginRatioShort;
+			
+		}
+		
+		&.inverted {
+			
+			color: @leadTextInvertedColor;
+		
+			&.emphasize,
+			.emphasize {
+				
+				color: @leadTextInvertedEmphasisColor;
+				
+			}
+			
+		}
+		
+	}
+	
+	&.small {
+		
+		font-family: @smallTextFontFamily;
+		color: @smallTextColor;
+		font-weight: @smallTextFontWeight;
+		font-size: @smallTextFontSize;
+		line-height: @smallTextLineHeight;
+		margin: 0px 0px @smallTextMargin 0px;
+		
+		&.emphasize,
+		.emphasize {
+			
+			font-weight: @smallTextEmphasisFontWeight;
+			color: @smallTextEmphasisColor;
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @smallTextMargin * @textMarginRatioTall;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @smallTextMargin * @textMarginRatioShort;
+			
+		}
+		
+		&.inverted {
+			
+			color: @smallTextInvertedColor;
+		
+			&.emphasize,
+			.emphasize {
+				
+				color: @smallTextInvertedEmphasisColor;
+				
+			}
+			
+		}
+		
+	}
+	
+	&.inverted {
+		
+		color: @bodyTextInvertedColor;
+	
+		&.emphasize,
+		.emphasize {
+			
+			color: @bodyTextInvertedEmphasisColor;
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Headings                                                                  */
+/*                                                                           */
+/* ========================================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	
+	code {
+		
+		text-transform: none;
+		
+	}
+	
+	.icon {
+		
+		vertical-align: text-top;
+		
+	}
+	
+}
+
+h1,
+.h1-clone {
+	
+	font-family: @headingH1TextFontFamily;
+	color: @headingH1TextColor;
+	font-weight: @headingH1TextFontWeight;
+	font-size: @headingH1TextFontSize;
+	line-height: @headingH1TextLineHeight;
+	margin: 0px 0px @headingH1TextMargin 0px;
+	text-transform: @headingH1TextTransform;
+	
+	a {
+		
+		color: @headingH1TextColor;
+		
+		&:hover {
+			
+			color: @linkColor;
+			
+		}
+		
+	}
+	
+	.icon {
+		
+		&.icon-mini {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-small {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-medium {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-large {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-jumbo {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @headingH1TextFontSize * @textMarginRatioTall;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @headingH1TextFontSize * @textMarginRatioShort;
+		
+	}
+	
+	&.emphasize,
+	.emphasize {
+		
+		font-weight: @headingH1TextEmphasisFontWeight;
+		color: @headingH1TextEmphasisColor;
+		
+	}
+	
+	&.inverted {
+		
+		color: @headingH1TextInvertedColor;
+	
+		&.emphasize,
+		.emphasize {
+			
+			color: @headingH1TextInvertedEmphasisColor;
+			
+		}
+		
+	}
+	
+}
+
+.h2,
+.h2-clone {
+	
+	margin-top: @textMarginRatioTop * @headingH1TextMargin;
+	
+}
+
+h2,
+.h2-clone {
+	
+	font-family: @headingH2TextFontFamily;
+	color: @headingH2TextColor;
+	font-weight: @headingH2TextFontWeight;
+	font-size: @headingH2TextFontSize;
+	line-height: @headingH2TextLineHeight;
+	margin: 0px 0px @headingH2TextMargin 0px;
+	text-transform: @headingH2TextTransform;
+	
+	a {
+		
+		color: @headingH2TextColor;
+		
+		&:hover {
+			
+			color: @linkColor;
+			
+		}
+		
+	}
+	
+	.icon {
+		
+		&.icon-mini {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-small {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-medium {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-large {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-jumbo {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @headingH2TextFontSize * @textMarginRatioTall;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @headingH2TextFontSize * @textMarginRatioShort;
+		
+	}
+	
+	&.emphasize,
+	.emphasize {
+		
+		font-weight: @headingH2TextEmphasisFontWeight;
+		color: @headingH2TextEmphasisColor;
+		
+	}
+	
+	&.inverted {
+		
+		color: @headingH2TextInvertedColor;
+	
+		&.emphasize,
+		.emphasize {
+			
+			color: @headingH2TextInvertedEmphasisColor;
+			
+		}
+		
+	}
+    
+}
+
+.h1,
+.h1-clone {
+	
+	+ h2,
+	+ h2.clone {
+		
+		margin-top: @textMarginRatioTop * @headingH2TextMargin;
+		
+	}
+	
+}
+
+h3,
+.h3-clone {
+	
+	font-family: @headingH3TextFontFamily;
+	color: @headingH3TextColor;
+	font-weight: @headingH3TextFontWeight;
+	font-size: @headingH3TextFontSize;
+	line-height: @headingH3TextLineHeight;
+	margin: 0px 0px @headingH3TextMargin 0px;
+	text-transform: @headingH3TextTransform;
+	
+	a {
+		
+		color: @headingH3TextColor;
+		
+		&:hover {
+			
+			color: @linkColor;
+			
+		}
+		
+	}
+	
+	.icon {
+		
+		&.icon-mini {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-small {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-medium {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-large {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-jumbo {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @headingH3TextFontSize * @textMarginRatioTall;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @headingH3TextFontSize * @textMarginRatioShort;
+		
+	}
+	
+	&.emphasize,
+	.emphasize {
+		
+		font-weight: @headingH3TextEmphasisFontWeight;
+		color: @headingH3TextEmphasisColor;
+		
+	}
+	
+	&.inverted {
+		
+		color: @headingH3TextInvertedColor;
+	
+		&.emphasize,
+		.emphasize {
+			
+			color: @headingH3TextInvertedEmphasisColor;
+			
+		}
+		
+	}
+    
+}
+
+h4,
+.h4-clone {
+	
+	font-family: @headingH4TextFontFamily;
+	color: @headingH4TextColor;
+	font-weight: @headingH4TextFontWeight;
+	font-size: @headingH4TextFontSize;
+	line-height: @headingH4TextLineHeight;
+	margin: 0px 0px @headingH4TextMargin 0px;
+	text-transform: @headingH4TextTransform;
+	
+	a {
+		
+		color: @headingH4TextColor;
+		
+		&:hover {
+			
+			color: @linkColor;
+			
+		}
+		
+	}
+	
+	.icon {
+		
+		&.icon-mini {
+			
+			margin-top: 7px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-small {
+			
+			margin-top: 2px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-medium {
+			
+			margin-top: -2px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-large {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-jumbo {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @headingH4TextFontSize * @textMarginRatioTall;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @headingH4TextFontSize * @textMarginRatioShort;
+		
+	}
+	
+	&.emphasize,
+	.emphasize {
+		
+		font-weight: @headingH4TextEmphasisFontWeight;
+		color: @headingH4TextEmphasisColor;
+		
+	}
+	
+	&.inverted {
+		
+		color: @headingH4TextInvertedColor;
+	
+		&.emphasize,
+		.emphasize {
+			
+			color: @headingH4TextInvertedEmphasisColor;
+			
+		}
+		
+	}
+    
+}
+
+h5,
+.h5-clone {
+	
+	font-family: @headingH5TextFontFamily;
+	color: @headingH5TextColor;
+	font-weight: @headingH5TextFontWeight;
+	font-size: @headingH5TextFontSize;
+	line-height: @headingH5TextLineHeight;
+	margin: 0px 0px @headingH5TextMargin 0px;
+	text-transform: @headingH5TextTransform;
+	
+	a {
+		
+		color: @headingH5TextColor;
+		
+		&:hover {
+			
+			color: @linkColor;
+			
+		}
+		
+	}
+	
+	.icon {
+		
+		&.icon-mini {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-small {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-medium {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-large {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-jumbo {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @headingH5TextFontSize * @textMarginRatioTall;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @headingH5TextFontSize * @textMarginRatioShort;
+		
+	}
+	
+	&.emphasize,
+	.emphasize {
+		
+		font-weight: @headingH5TextEmphasisFontWeight;
+		color: @headingH5TextEmphasisColor;
+		
+	}
+	
+	&.inverted {
+		
+		color: @headingH5TextInvertedColor;
+	
+		&.emphasize,
+		.emphasize {
+			
+			color: @headingH5TextInvertedEmphasisColor;
+			
+		}
+		
+	}
+    
+}
+
+h6,
+.h6-clone {
+	
+	font-family: @headingH6TextFontFamily;
+	color: @headingH6TextColor;
+	font-weight: @headingH6TextFontWeight;
+	font-size: @headingH6TextFontSize;
+	line-height: @headingH6TextLineHeight;
+	margin: (@textMarginRatioTop * @headingH6TextMargin) 0px @headingH6TextMargin 0px;
+	text-transform: @headingH6TextTransform;
+	
+	a {
+		
+		color: @headingH6TextColor;
+		
+		&:hover {
+			
+			color: @linkColor;
+			
+		}
+		
+	}
+	
+	.icon {
+		
+		&.icon-mini {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-small {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-medium {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-large {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+		&.icon-jumbo {
+			
+			margin-top: 0px;
+			margin-right: 10px;
+			
+		}
+		
+	}
+	
+	&.tall {
+		
+		margin-bottom: @headingH6TextFontSize * @textMarginRatioTall;
+		
+	}
+	
+	&.short {
+		
+		margin-bottom: @headingH6TextFontSize * @textMarginRatioShort;
+		
+	}
+	
+	&.emphasize,
+	.emphasize {
+		
+		font-weight: @headingH6TextEmphasisFontWeight;
+		color: @headingH6TextEmphasisColor;
+		
+	}
+	
+	&.inverted {
+		
+		color: @headingH6TextInvertedColor;
+	
+		&.emphasize,
+		.emphasize {
+			
+			color: @headingH6TextInvertedEmphasisColor;
+			
+		}
+		
+	}
+    
+}
+	
+p,
+h1,
+.h1-clone,
+h2,
+.h2-clone,
+h3,
+.h3-clone,
+h4,
+.h4-clone,
+h5,
+.h5-clone,
+h6,
+.h6-clone {
+	
+	+ h1,
+	+ .h1-clone {
+		
+		margin-top: @textMarginRatioTop * @headingH1TextMargin;
+		
+	}
+	
+	+ h2,
+	+ .h2-clone {
+		
+		margin-top: @textMarginRatioTop * @headingH2TextMargin;
+		
+	}
+	
+	+ h3,
+	+ .h3-clone {
+		
+		margin-top: @textMarginRatioTop * @headingH3TextMargin;
+		
+	}
+	
+	+ h4,
+	+ .h4-clone {
+		
+		margin-top: @textMarginRatioTop * @headingH4TextMargin;
+		
+	}
+	
+	+ h5,
+	+ .h5-clone {
+		
+		margin-top: @textMarginRatioTop * @headingH5TextMargin;
+		
+	}
+	
+	+ h6,
+	+ .h6-clone {
+		
+		margin-top: @textMarginRatioTop * @headingH6TextMargin;
+		
+	}
+	
+}
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Lists                                                                     */
+/*                                                                           */
+/* ========================================================================= */
+
+// Unordered and Ordered lists
+
+ul, ol {
+	
+	margin: 0px 0px @bodyTextMargin 0px;
+	padding: 0px;
+	list-style-position:inside;
+	
+	&.tall {
+		
+		margin-bottom: @bodyTextMargin * @textMarginRatioTall;
+		
+	}
+		
+	&.short {
+		
+		margin-bottom: @bodyTextMargin * @textMarginRatioShort;
+		
+	}
+	
+	&.centered {
+		
+		li {
+			
+			text-align: center;
+			
+		}
+		
+	}
+	
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+	
+	margin-top: (@bodyTextMargin / 2);
+	margin-bottom: 0;
+	margin-left: @bodyTextMargin;
+	
+}
+
+li {
+	
+	font-family: @bodyTextFontFamily;
+	color: @bodyTextColor;
+	font-weight: @bodyTextFontWeight;
+	font-size: @bodyTextFontSize;
+	line-height: @bodyTextLineHeight;
+	margin-bottom: @bodyTextMargin / 2;
+	
+	&:last-child {
+		
+		margin-bottom: 0px;
+		
+	}
+	
+}
+
+ul {
+	
+	list-style-type: disc;
+	
+}
+
+ol {
+	
+	list-style-type: decimal;
+	
+	&.a {
+		
+		list-style-type: lower-alpha;
+		
+	}
+	
+	&.A {
+		
+		list-style-type: upper-alpha;
+		
+	}
+	
+	&.i {
+		
+		list-style-type: lower-roman;
+		
+	}
+	
+	&.I {
+		
+		list-style-type: upper-roman;
+		
+	}
+	
+}
+
+ul.unstyled,
+ol.unstyled {
+	
+	margin-left: 0px;
+	list-style: none;
+	
+	li {
+		
+		padding-left: 0px;
+		
+	}
+	
+}
+
+// Description Lists
+
+dl {
+	
+	margin-bottom: @bodyTextMargin;
+	
+}
+
+dt,
+dd {
+	
+	line-height: @bodyTextLineHeight;
+	
+}
+
+dt {
+	
+	font-weight: bold;
+	line-height: @bodyTextLineHeight - 1; // fix jank Helvetica Neue font bug
+	margin-bottom: @bodyTextMargin;
+	color: @bodyTextColor;
+	
+}
+
+dd {
+	
+	margin-left: 0px;
+	margin-bottom: @bodyTextMargin;
+	
+}
+
+// Horizontal layout (like forms)
+
+.dl-horizontal {
+	
+	dt {
+		
+		float: left;
+		width: 120px;
+		clear: left;
+		text-align: right;
+		.text-overflow();
+		
+	}
+	
+	dd {
+		
+		margin-left: 130px;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Miscellaneous                                                             */
+/*                                                                           */
+/* ========================================================================= */
+
+// Horizontal rules
+
+hr {
+	
+	margin: @primaryMargin 0px @primaryMargin 0px;
+	border: 0px;
+	border-top: 1px solid @borderColor;
+	border-bottom: none;
+	
+	&.light {
+		
+		border-top: 1px solid @borderColorLight;
+		
+	}
+		
+	&.short {
+		
+		margin: @primaryMarginShort 0 @primaryMarginShort 0;
+		
+	}
+	
+	&.tall {
+		
+		margin: @primaryMarginTall 0 @primaryMarginTall 0;
+		
+	}
+	
+	&.flush {
+		
+		margin: 0px;
+		
+	}
+	
+	&.narrow {
+		
+		margin: 0 auto;
+		width: 120px;
+		margin-top: @primaryMargin;
+		margin-bottom: @primaryMargin;
+		
+		&.short {
+			
+			margin-top: @primaryMarginShort;
+			margin-bottom: @primaryMarginShort;
+			
+		}
+		
+		&.tall {
+			
+			margin-top: @primaryMarginTall;
+			margin-bottom: @primaryMarginTall;
+			
+		}
+		
+	}
+	
+}
+
+// Emphasis
+
+strong {
+	
+	font-weight: bold;
+	
+}
+
+em {
+	
+	font-style: italic;
+	
+}
+
+.muted {
+	
+	color: @grayLight;
+	
+}
+
+// Abbreviations and acronyms
+
+abbr[title] {
+	
+	cursor: help;
+	border-bottom: 1px dotted @grayLight;
+	
+}
+
+abbr.initialism {
+	
+	font-size: 90%;
+	text-transform: uppercase;
+	
+}
+
+// Blockquotes
+
+blockquote {
+	
+	padding: 0px 0px 0px (@bodyTextMargin / 2);
+	margin: 0px 0px @bodyTextMargin 0px;
+	border-left: 5px solid @grayLighter;
+	
+	p {
+		
+		margin-bottom: 0px;
+		#font > .shorthand(@leadTextFontSize, @leadTextFontWeight, @leadTextLineHeight);
+		
+	}
+	
+	small {
+		
+		display: block;
+		line-height: @bodyTextLineHeight;
+		color: @grayLight;
+		
+		&:before {
+			
+			content: '\2014 \00A0';
+			
+		}
+		
+	}
+	
+	// Float right with text-align: right
+	
+	&.pull-right {
+		
+		float: right;
+		padding-right: 15px;
+		padding-left: 0px;
+		border-right: 5px solid @grayLighter;
+		border-left: 0px;
+		
+		p,
+		small {
+			
+			text-align: right;
+			
+		}
+		
+	}
+	
+}
+
+// Quotes
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+	
+	content: "";
+	
+}
+
+// Addresses
+
+address {
+	
+	display: block;
+	margin-bottom: @bodyTextMargin;
+	font-style: normal;
+	line-height: @bodyTextLineHeight;
+	
+}
+
+// Misc
+
+small {
+	
+	font-size: 100%;
+	
+}
+
+cite {
+	
+	font-style: normal;
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for widescreen (@widescreen) and above.     */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @widescreen) {
+	
+	/* ===================================================================== */
+	/*                                                                       */
+	/* Body Text                                                             */
+	/*                                                                       */
+	/* ===================================================================== */
+	
+	p {
+		
+		font-size: @bodyTextFontSize * @bodyTextRatioWide;
+		line-height: @bodyTextLineHeight * @bodyTextRatioWide;
+		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioWide) 0px;
+		
+		&.tall {
+			
+			margin-bottom: @bodyTextMargin * @textMarginRatioTall * @bodyTextRatioWide;
+			
+		}
+			
+		&.short {
+			
+			margin-bottom: @bodyTextMargin * @textMarginRatioShort * @bodyTextRatioWide;
+			
+		}
+		
+		&.right {
+			
+			text-align: right;
+			
+		}
+		
+		&.lead {
+			
+			font-size: @leadTextFontSize * @leadTextRatioWide;
+			line-height: @leadTextLineHeight * @leadTextRatioWide;
+			margin: 0px 0px (@leadTextMargin * @leadTextRatioWide) 0px;
+			
+			&.tall {
+				
+				margin-bottom: @leadTextMargin * @textMarginRatioTall * @leadTextRatioWide;
+				
+			}
+			
+			&.short {
+				
+				margin-bottom: @leadTextMargin * @textMarginRatioShort * @leadTextRatioWide;
+				
+			}
+			
+		}
+		
+		&.small {
+			
+			font-size: @smallTextFontSize * @smallTextRatioWide;
+			line-height: @smallTextLineHeight * @smallTextRatioWide;
+			margin: 0px 0px (@smallTextMargin * @smallTextRatioWide) 0px;
+			
+			&.tall {
+				
+				margin-bottom: @smallTextMargin * @textMarginRatioTall * @smallTextRatioWide;
+				
+			}
+			
+			&.short {
+				
+				margin-bottom: @smallTextMargin * @textMarginRatioShort * @smallTextRatioWide;
+				
+			}
+			
+		}
+	
+	}
+	
+	/* ===================================================================== */
+	/*                                                                       */
+	/* Headings                                                              */
+	/*                                                                       */
+	/* ===================================================================== */
+	
+	h1,
+	.h1-clone {
+		
+		font-size: @headingH1TextFontSize * @headingH1TextRatioWide;
+		line-height: @headingH1TextLineHeight * @headingH1TextRatioWide;
+		margin: 0px 0px (@headingH1TextMargin * @headingH1TextRatioWide) 0px;
+		
+		.icon {
+			
+			&.icon-mini {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-small {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-medium {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-large {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-jumbo {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @headingH1TextFontSize * @textMarginRatioTall * @headingH1TextRatioWide;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH1TextFontSize * @textMarginRatioShort * @headingH1TextRatioWide;
+			
+		}
+	    
+	}
+	
+	h2,
+	.h2-clone {
+		
+		font-size: @headingH2TextFontSize * @headingH2TextRatioWide;
+		line-height: @headingH2TextLineHeight * @headingH2TextRatioWide;
+		margin: 0px 0px (@headingH2TextMargin * @headingH2TextRatioWide) 0px;
+		
+		.icon {
+			
+			&.icon-mini {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-small {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-medium {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-large {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-jumbo {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @headingH2TextFontSize * @textMarginRatioTall * @headingH2TextRatioWide;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH2TextFontSize * @textMarginRatioShort * @headingH2TextRatioWide;
+			
+		}
+	    
+	}
+	
+	h3,
+	.h3-clone {
+		
+		font-size: @headingH3TextFontSize * @headingH3TextRatioWide;
+		line-height: @headingH3TextLineHeight * @headingH3TextRatioWide;
+		margin: 0px 0px (@headingH3TextMargin * @headingH3TextRatioWide) 0px;
+		
+		.icon {
+			
+			&.icon-mini {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-small {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-medium {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-large {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-jumbo {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @headingH3TextFontSize * @textMarginRatioTall * @headingH3TextRatioWide;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH3TextFontSize * @textMarginRatioShort * @headingH3TextRatioWide;
+			
+		}
+	    
+	}
+	
+	h4,
+	.h4-clone {
+		
+		font-size: @headingH4TextFontSize * @headingH4TextRatioWide;
+		line-height: @headingH4TextLineHeight * @headingH4TextRatioWide;
+		margin: 0px 0px (@headingH4TextMargin * @headingH4TextRatioWide) 0px;
+		
+		.icon {
+			
+			&.icon-mini {
+				
+				margin-top: 7px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-small {
+				
+				margin-top: 2px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-medium {
+				
+				margin-top: -2px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-large {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-jumbo {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @headingH4TextFontSize * @textMarginRatioTall * @headingH4TextRatioWide;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH4TextFontSize * @textMarginRatioShort * @headingH4TextRatioWide;
+			
+		}
+	    
+	}
+	
+	h5,
+	.h5-clone {
+		
+		font-size: @headingH5TextFontSize * @headingH5TextRatioWide;
+		line-height: @headingH5TextLineHeight * @headingH5TextRatioWide;
+		margin: 0px 0px (@headingH5TextMargin * @headingH5TextRatioWide) 0px;
+		
+		.icon {
+			
+			&.icon-mini {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-small {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-medium {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-large {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-jumbo {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @headingH5TextFontSize * @textMarginRatioTall * @headingH5TextRatioWide;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH5TextFontSize * @textMarginRatioShort * @headingH5TextRatioWide;
+			
+		}
+	    
+	}
+	
+	h6,
+	.h6-clone {
+		
+		font-size: @headingH6TextFontSize * @headingH6TextRatioWide;
+		line-height: @headingH6TextLineHeight * @headingH6TextRatioWide;
+		margin: 0px 0px (@headingH6TextMargin * @headingH6TextRatioWide) 0px;
+		
+		.icon {
+			
+			&.icon-mini {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-small {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-medium {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-large {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-jumbo {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @headingH6TextFontSize * @textMarginRatioTall * @headingH6TextRatioWide;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH6TextFontSize * @textMarginRatioShort * @headingH6TextRatioWide;
+			
+		}
+	    
+	}
+	
+	p,
+	h1,
+	.h1-clone,
+	h2,
+	.h2-clone,
+	h3,
+	.h3-clone,
+	h4,
+	.h4-clone,
+	h5,
+	.h5-clone,
+	h6,
+	.h6-clone {
+		
+		+ h1,
+		+ .h1-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH1TextMargin * @headingH1TextRatioWide;
+			
+		}
+		
+		+ h2,
+		+ .h2-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH2TextMargin * @headingH2TextRatioWide;
+			
+		}
+		
+		+ h3,
+		+ .h3-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH3TextMargin * @headingH3TextRatioWide;
+			
+		}
+		
+		+ h4,
+		+ .h4-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH4TextMargin * @headingH4TextRatioWide;
+			
+		}
+		
+		+ h5,
+		+ .h5-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH5TextMargin * @headingH5TextRatioWide;
+			
+		}
+		
+		+ h6,
+		+ .h6-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH6TextMargin * @headingH6TextRatioWide;
+			
+		}
+		
+	}
+	
+	
+	/* ===================================================================== */
+	/*                                                                       */
+	/* Lists                                                                 */
+	/*                                                                       */
+	/* ===================================================================== */
+	
+	// Unordered and Ordered lists
+	
+	ul, ol {
+		
+		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioWide) 0px;
+		
+		&.tall {
+			
+			margin-bottom: @bodyTextMargin * @textMarginRatioTall * @bodyTextRatioWide;
+			
+		}
+			
+		&.short {
+			
+			margin-bottom: @bodyTextMargin * @textMarginRatioShort * @bodyTextRatioWide;
+			
+		}
+		
+	}
+	
+	ul ul,
+	ul ol,
+	ol ol,
+	ol ul {
+		
+		margin-left: (@bodyTextMargin * @bodyTextRatioWide);
+		margin-top: (@bodyTextMargin / 2) * @bodyTextRatioWide;
+		
+	}
+	
+	li {
+		
+		font-size: @bodyTextFontSize * @bodyTextRatioWide;
+		line-height: @bodyTextLineHeight * @bodyTextRatioWide;
+		margin-bottom: (@bodyTextMargin / 2) * @bodyTextRatioWide;
+		
+		&:last-child {
+			
+			margin-bottom: 0px;
+			
+		}
+		
+	}
+	
+	// Description Lists
+	
+	dl {
+		
+		margin-bottom: @bodyTextMargin * @bodyTextRatioWide;
+		
+	}
+	
+	dt,
+	dd {
+		
+		line-height: @bodyTextLineHeight * @bodyTextRatioWide;
+		
+	}
+	
+	dt {
+		
+		line-height: (@bodyTextLineHeight * @bodyTextRatioWide) - 1; // fix jank Helvetica Neue font bug
+		margin-bottom: @bodyTextMargin * @bodyTextRatioWide;
+		
+	}
+	
+	dd {
+		
+		margin-bottom: @bodyTextMargin * @bodyTextRatioWide;
+		
+	}
+	
+	
+	
+	/* ===================================================================== */
+	/*                                                                       */
+	/* Miscellaneous                                                         */
+	/*                                                                       */
+	/* ===================================================================== */
+	
+	// Horizontal rules
+	
+	hr {
+		
+		margin: @primaryMarginWidescreen 0px @primaryMarginWidescreen 0px;
+			
+		&.short {
+			
+			margin: @primaryMarginShortWidescreen 0px @primaryMarginShortWidescreen 0px;
+			
+		}
+		
+		&.tall {
+			
+			margin: @primaryMarginTallWidescreen 0px @primaryMarginTallWidescreen 0px;
+			
+		}
+	
+		&.narrow {
+			
+			margin: 0 auto;
+			margin-top: @primaryMarginWidescreen;
+			margin-bottom: @primaryMarginWidescreen;
+			
+			&.short {
+				
+				margin-top: @primaryMarginShortWidescreen;
+				margin-bottom: @primaryMarginShortWidescreen;
+				
+			}
+			
+			&.tall {
+				
+				margin-top: @primaryMarginTallWidescreen;
+				margin-bottom: @primaryMarginTallWidescreen;
+				
+			}
+			
+		}
+		
+	}
+	
+	// Blockquotes
+	
+	blockquote {
+		
+		padding: 0px 0px 0px ((@bodyTextMargin * @bodyTextRatioWide) / 2);
+		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioWide) 0px;
+		
+		p {
+			
+			#font > .shorthand(@leadTextFontSize * @bodyTextRatioWide, @leadTextFontWeight * @bodyTextRatioWide, @leadTextLineHeight * @bodyTextRatioWide);
+			
+		}
+		
+		small {
+			
+			line-height: @bodyTextLineHeight * @smallTextRatioWide;
+			
+		}
+		
+	}
+	
+	// Addresses
+	
+	address {
+		
+		margin-bottom: @bodyTextMargin * @bodyTextRatioWide;
+		line-height: @bodyTextLineHeight * @bodyTextRatioWide;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for portrait tablet (@tablet) to default    */
+/* desktop (@default).                                                       */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (min-width: @tablet) and (max-width: @tabletMax) {
+	
+	/* ===================================================================== */
+	/*                                                                       */
+	/* Body Text                                                             */
+	/*                                                                       */
+	/* ===================================================================== */
+	
+	p {
+		
+		font-size: @bodyTextFontSize * @bodyTextRatioTablet;
+		line-height: @bodyTextLineHeight * @bodyTextRatioTablet;
+		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioTablet) 0px;
+		
+		&.tall {
+			
+			margin-bottom: @bodyTextMargin * @textMarginRatioTall * @bodyTextRatioTablet;
+			
+		}
+			
+		&.short {
+			
+			margin-bottom: @bodyTextMargin * @textMarginRatioShort * @bodyTextRatioTablet;
+			
+		}
+		
+		&.right {
+			
+			text-align: right;
+			
+		}
+		
+		&.lead {
+			
+			font-size: @leadTextFontSize * @leadTextRatioTablet;
+			line-height: @leadTextLineHeight * @leadTextRatioTablet;
+			margin: 0px 0px (@leadTextMargin * @leadTextRatioTablet) 0px;
+			
+			&.tall {
+				
+				margin-bottom: @leadTextMargin * @textMarginRatioTall * @leadTextRatioTablet;
+				
+			}
+			
+			&.short {
+				
+				margin-bottom: @leadTextMargin * @textMarginRatioShort * @leadTextRatioTablet;
+				
+			}
+			
+		}
+		
+		&.small {
+			
+			font-size: @smallTextFontSize * @smallTextRatioTablet;
+			line-height: @smallTextLineHeight * @smallTextRatioTablet;
+			margin: 0px 0px (@smallTextMargin * @smallTextRatioTablet) 0px;
+			
+			&.tall {
+				
+				margin-bottom: @smallTextMargin * @textMarginRatioTall * @smallTextRatioTablet;
+				
+			}
+			
+			&.short {
+				
+				margin-bottom: @smallTextMargin * @textMarginRatioShort * @smallTextRatioTablet;
+				
+			}
+			
+		}
+	
+	}
+	
+	/* ====================================================================== */
+	/*                                                                        */
+	/* Headings                                                               */
+	/*                                                                        */
+	/* ====================================================================== */
+	
+	h1,
+	.h1-clone {
+		
+		font-size: @headingH1TextFontSize * @headingH1TextRatioTablet;
+		line-height: @headingH1TextLineHeight * @headingH1TextRatioTablet;
+		margin: 0px 0px (@headingH1TextMargin * @headingH1TextRatioTablet) 0px;
+		
+		.icon {
+			
+			&.icon-mini {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-small {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-medium {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-large {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-jumbo {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @headingH1TextFontSize * @textMarginRatioTall * @headingH1TextRatioTablet;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH1TextFontSize * @textMarginRatioShort * @headingH1TextRatioTablet;
+			
+		}
+	    
+	}
+	
+	h2,
+	.h2-clone {
+		
+		font-size: @headingH2TextFontSize * @headingH2TextRatioTablet;
+		line-height: @headingH2TextLineHeight * @headingH2TextRatioTablet;
+		margin: 0px 0px (@headingH2TextMargin * @headingH2TextRatioTablet) 0px;
+		
+		.icon {
+			
+			&.icon-mini {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-small {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-medium {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-large {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-jumbo {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @headingH2TextFontSize * @textMarginRatioTall * @headingH2TextRatioTablet;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH2TextFontSize * @textMarginRatioShort * @headingH2TextRatioTablet;
+			
+		}
+	    
+	}
+	
+	h3,
+	.h3-clone {
+		
+		font-size: @headingH3TextFontSize * @headingH3TextRatioTablet;
+		line-height: @headingH3TextLineHeight * @headingH3TextRatioTablet;
+		margin: 0px 0px (@headingH3TextMargin * @headingH3TextRatioTablet) 0px;
+		
+		.icon {
+			
+			&.icon-mini {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-small {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-medium {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-large {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-jumbo {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @headingH3TextFontSize * @textMarginRatioTall * @headingH3TextRatioTablet;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH3TextFontSize * @textMarginRatioShort * @headingH3TextRatioTablet;
+			
+		}
+	    
+	}
+	
+	h4,
+	.h4-clone {
+		
+		font-size: @headingH4TextFontSize * @headingH4TextRatioTablet;
+		line-height: @headingH4TextLineHeight * @headingH4TextRatioTablet;
+		margin: 0px 0px (@headingH4TextMargin * @headingH4TextRatioTablet) 0px;
+		
+		.icon {
+			
+			&.icon-mini {
+				
+				margin-top: 4px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-small {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-medium {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-large {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-jumbo {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @headingH4TextFontSize * @textMarginRatioTall * @headingH4TextRatioTablet;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH4TextFontSize * @textMarginRatioShort * @headingH4TextRatioTablet;
+			
+		}
+	    
+	}
+	
+	h5,
+	.h5-clone {
+		
+		font-size: @headingH5TextFontSize * @headingH5TextRatioTablet;
+		line-height: @headingH5TextLineHeight * @headingH5TextRatioTablet;
+		margin: 0px 0px (@headingH5TextMargin * @headingH5TextRatioTablet) 0px;
+		
+		.icon {
+			
+			&.icon-mini {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-small {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-medium {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-large {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-jumbo {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @headingH5TextFontSize * @textMarginRatioTall * @headingH5TextRatioTablet;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH5TextFontSize * @textMarginRatioShort * @headingH5TextRatioTablet;
+			
+		}
+	    
+	}
+	
+	h6,
+	.h6-clone {
+		
+		font-size: @headingH6TextFontSize * @headingH6TextRatioTablet;
+		line-height: @headingH6TextLineHeight * @headingH6TextRatioTablet;
+		margin: 0px 0px (@headingH6TextMargin * @headingH6TextRatioTablet) 0px;
+		
+		.icon {
+			
+			&.icon-mini {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-small {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-medium {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-large {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-jumbo {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @headingH6TextFontSize * @textMarginRatioTall * @headingH6TextRatioTablet;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH6TextFontSize * @textMarginRatioShort * @headingH6TextRatioTablet;
+			
+		}
+	    
+	}
+	
+	p,
+	h1,
+	.h1-clone,
+	h2,
+	.h2-clone,
+	h3,
+	.h3-clone,
+	h4,
+	.h4-clone,
+	h5,
+	.h5-clone,
+	h6,
+	.h6-clone {
+		
+		+ h1,
+		+ .h1-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH1TextMargin * @headingH1TextRatioTablet;
+			
+		}
+		
+		+ h2,
+		+ .h2-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH2TextMargin * @headingH2TextRatioTablet;
+			
+		}
+		
+		+ h3,
+		+ .h3-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH3TextMargin * @headingH3TextRatioTablet;
+			
+		}
+		
+		+ h4,
+		+ .h4-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH4TextMargin * @headingH4TextRatioTablet;
+			
+		}
+		
+		+ h5,
+		+ .h5-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH5TextMargin * @headingH5TextRatioTablet;
+			
+		}
+		
+		+ h6,
+		+ .h6-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH6TextMargin * @headingH6TextRatioTablet;
+			
+		}
+		
+	}
+	
+	
+	/* ===================================================================== */
+	/*                                                                       */
+	/* Lists                                                                 */
+	/*                                                                       */
+	/* ===================================================================== */
+	
+	// Unordered and Ordered lists
+	
+	ul, ol {
+		
+		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioTablet) 0px;
+		
+		&.tall {
+			
+			margin-bottom: @bodyTextMargin * @textMarginRatioTall * @bodyTextRatioTablet;
+			
+		}
+			
+		&.short {
+			
+			margin-bottom: @bodyTextMargin * @textMarginRatioShort * @bodyTextRatioTablet;
+			
+		}
+		
+	}
+	
+	ul ul,
+	ul ol,
+	ol ol,
+	ol ul {
+		
+		margin-top: (@bodyTextMargin / 2) * @bodyTextRatioTablet;
+		margin-left: (@bodyTextMargin * @bodyTextRatioTablet);
+		
+	}
+	
+	li {
+		
+		font-size: @bodyTextFontSize * @bodyTextRatioTablet;
+		line-height: @bodyTextLineHeight * @bodyTextRatioTablet;
+		margin-bottom: (@bodyTextMargin / 2) * @bodyTextRatioTablet;
+		
+		&:last-child {
+			
+			margin-bottom: 0px;
+			
+		}
+		
+	}
+	
+	// Description Lists
+	
+	dl {
+		
+		margin-bottom: @bodyTextMargin * @bodyTextRatioTablet;
+		
+	}
+	
+	dt,
+	dd {
+		
+		line-height: @bodyTextLineHeight * @bodyTextRatioTablet;
+		
+	}
+	
+	dt {
+		
+		line-height: (@bodyTextLineHeight * @bodyTextRatioTablet) - 1; // fix jank Helvetica Neue font bug
+		margin-bottom: @bodyTextMargin * @bodyTextRatioTablet;
+		
+	}
+	
+	dd {
+		
+		margin-bottom: @bodyTextMargin * @bodyTextRatioTablet;
+		
+	}
+	
+	
+	
+	/* ===================================================================== */
+	/*                                                                       */
+	/* Miscellaneous                                                         */
+	/*                                                                       */
+	/* ===================================================================== */
+	
+	// Horizontal rules
+	
+	hr {
+		
+		margin: @primaryMarginTablet 0px @primaryMarginTablet 0px;
+			
+		&.short {
+			
+			margin: @primaryMarginShortTablet 0px @primaryMarginShortTablet 0px;
+			
+		}
+		
+		&.tall {
+			
+			margin: @primaryMarginTallTablet 0px @primaryMarginTallTablet 0px;
+			
+		}
+	
+		&.narrow {
+			
+			margin: 0 auto;
+			margin-top: @primaryMarginTablet;
+			margin-bottom: @primaryMarginTablet;
+			
+			&.short {
+				
+				margin-top: @primaryMarginShortTablet;
+				margin-bottom: @primaryMarginShortTablet;
+				
+			}
+			
+			&.tall {
+				
+				margin-top: @primaryMarginTallTablet;
+				margin-bottom: @primaryMarginTallTablet;
+				
+			}
+			
+		}
+		
+	}
+	
+	// Blockquotes
+	
+	blockquote {
+		
+		padding: 0px 0px 0px ((@bodyTextMargin * @bodyTextRatioTablet) / 2);
+		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioTablet) 0px;
+		
+		p {
+			
+			#font > .shorthand(@leadTextFontSize * @bodyTextRatioTablet, @leadTextFontWeight * @bodyTextRatioTablet, @leadTextLineHeight * @bodyTextRatioTablet);
+			
+		}
+		
+		small {
+			
+			line-height: @bodyTextLineHeight * @smallTextRatioTablet;
+			
+		}
+		
+	}
+	
+	// Addresses
+	
+	address {
+		
+		margin-bottom: @bodyTextMargin * @bodyTextRatioTablet;
+		line-height: @bodyTextLineHeight * @bodyTextRatioTablet;
+		
+	}
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to portrait tablets (@tablet)            */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileLandscapeMax) {
+	
+	/* ===================================================================== */
+	/*                                                                       */
+	/* Body Text                                                             */
+	/*                                                                       */
+	/* ===================================================================== */
+	
+	p {
+		
+		font-size: @bodyTextFontSize * @bodyTextRatioMobile;
+		line-height: @bodyTextLineHeight * @bodyTextRatioMobile;
+		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioMobile) 0px;
+		
+		&.tall {
+			
+			margin-bottom: @bodyTextMargin * @textMarginRatioTall * @bodyTextRatioMobile;
+			
+		}
+			
+		&.short {
+			
+			margin-bottom: @bodyTextMargin * @textMarginRatioShort * @bodyTextRatioMobile;
+			
+		}
+		
+		&.right {
+			
+			text-align: right;
+			
+		}
+		
+		&.lead {
+			
+			font-size: @leadTextFontSize * @leadTextRatioMobile;
+			line-height: @leadTextLineHeight * @leadTextRatioMobile;
+			margin: 0px 0px (@leadTextMargin * @leadTextRatioMobile) 0px;
+			
+			&.tall {
+				
+				margin-bottom: @leadTextMargin * @textMarginRatioTall * @leadTextRatioMobile;
+				
+			}
+			
+			&.short {
+				
+				margin-bottom: @leadTextMargin * @textMarginRatioShort * @leadTextRatioMobile;
+				
+			}
+			
+		}
+		
+		&.small {
+			
+			font-size: @smallTextFontSize * @smallTextRatioMobile;
+			line-height: @smallTextLineHeight * @smallTextRatioMobile;
+			margin: 0px 0px (@smallTextMargin * @smallTextRatioMobile) 0px;
+			
+			&.tall {
+				
+				margin-bottom: @smallTextMargin * @textMarginRatioTall * @smallTextRatioMobile;
+				
+			}
+			
+			&.short {
+				
+				margin-bottom: @smallTextMargin * @textMarginRatioShort * @smallTextRatioMobile;
+				
+			}
+			
+		}
+	
+	}
+	
+	/* ===================================================================== */
+	/*                                                                       */
+	/* Headings                                                              */
+	/*                                                                       */
+	/* ===================================================================== */
+	
+	h1,
+	.h1-clone {
+		
+		font-size: @headingH1TextFontSize * @headingH1TextRatioMobile;
+		line-height: @headingH1TextLineHeight * @headingH1TextRatioMobile;
+		margin: 0px 0px (@headingH1TextMargin * @headingH1TextRatioMobile) 0px;
+		
+		
+		&.tall {
+			
+			margin-bottom: @headingH1TextFontSize * @textMarginRatioTall * @headingH1TextRatioMobile;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH1TextFontSize * @textMarginRatioShort * @headingH1TextRatioMobile;
+			
+		}
+	    
+	}
+	
+	h2,
+	.h2-clone {
+		
+		font-size: @headingH2TextFontSize * @headingH2TextRatioMobile;
+		line-height: @headingH2TextLineHeight * @headingH2TextRatioMobile;
+		margin: 0px 0px (@headingH2TextMargin * @headingH2TextRatioMobile) 0px;
+		
+		
+		&.tall {
+			
+			margin-bottom: @headingH2TextFontSize * @textMarginRatioTall * @headingH2TextRatioMobile;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH2TextFontSize * @textMarginRatioShort * @headingH2TextRatioMobile;
+			
+		}
+	    
+	}
+	
+	h3,
+	.h3-clone {
+		
+		font-size: @headingH3TextFontSize * @headingH3TextRatioMobile;
+		line-height: @headingH3TextLineHeight * @headingH3TextRatioMobile;
+		margin: 0px 0px (@headingH3TextMargin * @headingH3TextRatioMobile) 0px;
+		
+		
+		&.tall {
+			
+			margin-bottom: @headingH3TextFontSize * @textMarginRatioTall * @headingH3TextRatioMobile;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH3TextFontSize * @textMarginRatioShort * @headingH3TextRatioMobile;
+			
+		}
+	    
+	}
+	
+	h4,
+	.h4-clone {
+		
+		font-size: @headingH4TextFontSize * @headingH4TextRatioMobile;
+		line-height: @headingH4TextLineHeight * @headingH4TextRatioMobile;
+		margin: 0px 0px (@headingH4TextMargin * @headingH4TextRatioMobile) 0px;
+		
+		.icon {
+			
+			&.icon-mini {
+				
+				margin-top: 3px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-small {
+				
+				margin-top: -1px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-medium {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-large {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+			&.icon-jumbo {
+				
+				margin-top: 0px;
+				margin-right: 10px;
+				
+			}
+			
+		}
+		
+		&.tall {
+			
+			margin-bottom: @headingH4TextFontSize * @textMarginRatioTall * @headingH4TextRatioMobile;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH4TextFontSize * @textMarginRatioShort * @headingH4TextRatioMobile;
+			
+		}
+	    
+	}
+	
+	h5,
+	.h5-clone {
+		
+		font-size: @headingH5TextFontSize * @headingH5TextRatioMobile;
+		line-height: @headingH5TextLineHeight * @headingH5TextRatioMobile;
+		margin: 0px 0px (@headingH5TextMargin * @headingH5TextRatioMobile) 0px;
+		
+		&.tall {
+			
+			margin-bottom: @headingH5TextFontSize * @textMarginRatioTall * @headingH5TextRatioMobile;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH5TextFontSize * @textMarginRatioShort * @headingH5TextRatioMobile;
+			
+		}
+	    
+	}
+	
+	h6,
+	.h6-clone {
+		
+		font-size: @headingH6TextFontSize * @headingH6TextRatioMobile;
+		line-height: @headingH6TextLineHeight * @headingH6TextRatioMobile;
+		margin: 0px 0px (@headingH6TextMargin * @headingH6TextRatioMobile) 0px;
+		
+		
+		&.tall {
+			
+			margin-bottom: @headingH6TextFontSize * @textMarginRatioTall * @headingH6TextRatioMobile;
+			
+		}
+		
+		&.short {
+			
+			margin-bottom: @headingH6TextFontSize * @textMarginRatioShort * @headingH6TextRatioMobile;
+			
+		}
+	    
+	}
+	
+	p,
+	h1,
+	.h1-clone,
+	h2,
+	.h2-clone,
+	h3,
+	.h3-clone,
+	h4,
+	.h4-clone,
+	h5,
+	.h5-clone,
+	h6,
+	.h6-clone {
+		
+		+ h1,
+		+ .h1-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH1TextMargin * @headingH1TextRatioMobile;
+			
+		}
+		
+		+ h2,
+		+ .h2-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH2TextMargin * @headingH2TextRatioMobile;
+			
+		}
+		
+		+ h3,
+		+ .h3-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH3TextMargin * @headingH3TextRatioMobile;
+			
+		}
+		
+		+ h4,
+		+ .h4-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH4TextMargin * @headingH4TextRatioMobile;
+			
+		}
+		
+		+ h5,
+		+ .h5-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH5TextMargin * @headingH5TextRatioMobile;
+			
+		}
+		
+		+ h6,
+		+ .h6-clone {
+			
+			margin-top: @textMarginRatioTop * @headingH6TextMargin * @headingH6TextRatioMobile;
+			
+		}
+		
+	}
+	
+	
+	/* ===================================================================== */
+	/*                                                                       */
+	/* Lists                                                                 */
+	/*                                                                       */
+	/* ===================================================================== */
+	
+	// Unordered and Ordered lists
+	
+	ul, ol {
+		
+		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioMobile) 0px;
+		
+		&.tall {
+			
+			margin-bottom: @bodyTextMargin * @textMarginRatioTall * @bodyTextRatioMobile;
+			
+		}
+			
+		&.short {
+			
+			margin-bottom: @bodyTextMargin * @textMarginRatioShort * @bodyTextRatioMobile;
+			
+		}
+		
+	}
+	
+	ul ul,
+	ul ol,
+	ol ol,
+	ol ul {
+		
+		margin-left: (@bodyTextMargin * @bodyTextRatioMobile);
+		margin-top: (@bodyTextMargin / 2) * @bodyTextRatioMobile;
+		
+	}
+	
+	li {
+		
+		font-size: @bodyTextFontSize * @bodyTextRatioMobile;
+		line-height: @bodyTextLineHeight * @bodyTextRatioMobile;
+		margin-bottom: (@bodyTextMargin / 2) * @bodyTextRatioMobile;
+		
+		&:last-child {
+			
+			margin-bottom: 0px;
+			
+		}
+		
+	}
+	
+	// Description Lists
+	
+	dl {
+		
+		margin-bottom: @bodyTextMargin * @bodyTextRatioMobile;
+		
+	}
+	
+	dt,
+	dd {
+		
+		line-height: @bodyTextLineHeight * @bodyTextRatioMobile;
+		
+	}
+	
+	dt {
+		
+		line-height: (@bodyTextLineHeight * @bodyTextRatioMobile) - 1; // fix jank Helvetica Neue font bug
+		margin-bottom: @bodyTextMargin * @bodyTextRatioMobile;
+		
+	}
+	
+	dd {
+		
+		margin-bottom: @bodyTextMargin * @bodyTextRatioMobile;
+		
+	}
+	
+	
+	
+	/* ===================================================================== */
+	/*                                                                       */
+	/* Miscellaneous                                                         */
+	/*                                                                       */
+	/* ===================================================================== */
+	
+	// Horizontal rules
+	
+	hr {
+		
+		margin: @primaryMarginTablet 0px @primaryMarginTablet 0px;
+			
+		&.short {
+			
+			margin: @primaryMarginShortTablet 0px @primaryMarginShortTablet 0px;
+			
+		}
+		
+		&.tall {
+			
+			margin: @primaryMarginTallTablet 0px @primaryMarginTallTablet 0px;
+			
+		}
+	
+		&.narrow {
+			
+			margin: 0 auto;
+			margin-top: @primaryMarginTablet;
+			margin-bottom: @primaryMarginTablet;
+			
+			&.short {
+				
+				margin-top: @primaryMarginShortTablet;
+				margin-bottom: @primaryMarginShortTablet;
+				
+			}
+			
+			&.tall {
+				
+				margin-top: @primaryMarginTallTablet;
+				margin-bottom: @primaryMarginTallTablet;
+				
+			}
+			
+		}
+		
+	}
+	
+	// Blockquotes
+	
+	blockquote {
+		
+		padding: 0px 0px 0px ((@bodyTextMargin * @bodyTextRatioMobile) / 2);
+		margin: 0px 0px (@bodyTextMargin * @bodyTextRatioMobile) 0px;
+		
+		p {
+			
+			#font > .shorthand(@leadTextFontSize * @bodyTextRatioMobile, @leadTextFontWeight * @bodyTextRatioMobile, @leadTextLineHeight * @bodyTextRatioMobile);
+			
+		}
+		
+		small {
+			
+			line-height: @bodyTextLineHeight * @smallTextRatioMobile;
+			
+		}
+		
+	}
+	
+	// Addresses
+	
+	address {
+		
+		margin-bottom: @bodyTextMargin * @bodyTextRatioMobile;
+		line-height: @bodyTextLineHeight * @bodyTextRatioMobile;
+		
+	}
+		
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling up to landscape phones (@mobileLandscape)   */
+/*                                                                           */
+/* ========================================================================= */
+
+@media (max-width: @mobileMax) {
+	
+}
+
+
+
+/* ========================================================================= */
+/*                                                                           */
+/* Responsive changes to styling for Retina Displays                         */
+/*                                                                           */
+/* ========================================================================= */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	
+}
